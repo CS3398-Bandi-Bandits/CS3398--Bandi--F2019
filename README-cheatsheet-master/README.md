@@ -35,10 +35,15 @@ Show examples of usage:
 `put-your-code-here`
 
 ## Features
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+Real Life Leveling
+  Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as   well. I, <Victor>, as a <person who is physically active>, want a game that rewards me for daily workouts so that I won't lose the  motivation to continue my workouts. 
+  
+View Stats: 
+  View your real life stats in the game and how they correspond to your character's progression level. All users can use this. 
+  I, <Devon> as a <Gamer> want a game that provides some real world benefit, so that i can feel productive about playing video games. 
+  
+Graphical User Interface 
+  View a user interface that displays your progression in the game that will reflect your real life progression. 
 
 To-do list:
 * Wow improvement to be done 1
