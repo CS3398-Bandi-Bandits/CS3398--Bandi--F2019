@@ -1,42 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ThreeSolid">
-    <property environment="env"/>
-    <property name="debuglevel" value="source,lines,vars"/>
-    <property name="target" value="1.8"/>
-    <property name="source" value="1.8"/>
-    <path id="ThreeSolid.classpath">
-        <pathelement location="bin"/>
-    </path>
-    <target name="init">
-        <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-            <fileset dir="src">
-                <exclude name="**/*.launch"/>
-                <exclude name="**/*.java"/>
-            </fileset>
-        </copy>
-    </target>
+<project>
+
     <target name="clean">
-        <delete dir="bin"/>
+        <delete dir="build"/>
     </target>
-    <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
-    <target depends="init" name="build-project">
-        <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
-            <src path="src"/>
-            <classpath refid="ThreeSolid.classpath"/>
-        </javac>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
     </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target name="ThreeSolidMain">
-        <java classname="threesolid.ThreeSolidMain" failonerror="true" fork="yes">
-            <classpath refid="ThreeSolid.classpath"/>
-        </java>
+
+    <target name="jar">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/ThreeSolidMain.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="threesolid.ThreeSolidMain"/>
+            </manifest>
+        </jar>
     </target>
+
+    <target name="run">
+        <java jar="build/jar/ThreeSolidMain.jar" fork="true"/>
+    </target>
+
 </project>
