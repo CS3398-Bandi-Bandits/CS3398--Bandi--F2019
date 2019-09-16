@@ -12,9 +12,9 @@
 * [Contact](#contact)
 
 ## General info
-Developers: Dakota Ruhl, Kenneth Omo, Jose Hernandez, Victor Hernandez, Devon Tyson
+<u>Developers:</u> Dakota Ruhl, Kenneth Omo, Jose Hernandez, Victor Hernandez, Devon Tyson
 
-The purpose of this project is to create an application that tracks exercise data to level up a character. The intended audience is for people who would like to get fit in a fun way. We hope that this application impacts the well-being of our users by inspiring them to go to the gym. 
+<center>The purpose of this project is to create an application that tracks exercise data to level up a character. The intended audience is for people who would like to get fit in a fun way. We hope that this application impacts the well-being of our users by inspiring them to go to the gym. </center>
 
 ## Technologies
 Unity game engine <br>
@@ -25,7 +25,7 @@ Andriod Studio <br>
 Phone <br>
 
 ## Features
-<b>Real Life Leveling:</b> <br>
+<b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as well. <br>
  I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
   
@@ -40,17 +40,17 @@ Phone <br>
 Screenshots
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+How to install / setup your local environement / add link to demo version
 
 ## Code Examples
-Show examples of usage:
+Usage:
 `put-your-code-here`
 
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: In progress
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+Credits here
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Contact info
