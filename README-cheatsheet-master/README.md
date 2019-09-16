@@ -3,10 +3,10 @@ Fit Warriors application
 
 ## Table of contents
 * [General info](#general-info)
-* [Screenshots](#screenshots)
+* [Logo](#logo)
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Features](#features)
+* [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
 * [Contact](#contact)
@@ -20,23 +20,23 @@ The purpose of this project is to create an application that tracks exercise dat
 ![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
 
 ## Technologies
-Unity Game engine
-MySQL
-Java SDK 
-Andriod App builder
-Andriod Studio
-Phone
+Unity game engine <br>
+MySQL <br>
+Java SDK <br>
+Andriod App builder <br>
+Andriod Studio <br>
+Phone <br>
 
 ## Features
-Real Life Leveling
-  Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as   well.
-  I, <Victor>, as a <person who is physically active>, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. 
+Real Life Leveling <br>
+  Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as   well. <br>
+  I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
   
-View Stats: 
-  View your real life stats in the game and how they correspond to your character's progression level. All users can use this.
-  I, <Devon> as a <Gamer> want a game that provides some real world benefit, so that i can feel productive about playing video games. 
+View Stats: <br>
+  View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
+  I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
   
-Graphical User Interface 
+Graphical User Interface <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. 
 
 ## Setup
