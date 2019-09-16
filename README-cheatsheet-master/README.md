@@ -1,5 +1,5 @@
-# Project Name
-Fit Warriors
+# Fit Warriors
+Fit Warriors application
 
 ## Table of contents
 * [General info](#general-info)
@@ -12,15 +12,15 @@ Fit Warriors
 * [Contact](#contact)
 
 ## General info
-Dakota Ruhl, Kenneth Omo, Jose Hernandez, Victor Hernandez, Devon Tyson
+Developers: Dakota Ruhl, Kenneth Omo, Jose Hernandez, Victor Hernandez, Devon Tyson
 
-The purpose of this project is to create an application that tracks excersize and study data to level up a character. We hope to make this a multiplayer game. 
+The purpose of this project is to create an application that tracks exercise data to level up a character. The intended audience is for people who would like to get fit in a fun way. We hope that this application impacts the well-being of our users by inspiring them to go to the gym. 
 
-## Screenshots
-![Example screenshot](./img/screenshot.png)
+## Logo
+![Fit Warriors Logo](./img/fw_logo.png)
 
 ## Technologies
-Unity
+Unity Game engine
 MySQL
 Java SDK 
 Andriod App builder
@@ -45,9 +45,7 @@ View Stats:
 Graphical User Interface 
   View a user interface that displays your progression in the game that will reflect your real life progression. 
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+
 
 ## Status
 Project is: _in progress_, _finished_, _no longer continue_ and why?
