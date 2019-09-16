@@ -29,12 +29,12 @@ Phone <br>
 
 ## Features
 Real Life Leveling: <br>
- &emsp; Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as   well. <br>
- &emsp;&emsp; I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
+ &emsp; Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as well. <br>
+ &emsp; I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
   
 View Stats: <br>
   &emsp; View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
-  &emsp;&emsp; I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
+  &emsp; I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
   
 Graphical User Interface: <br>
   &emsp; View a user interface that displays your progression in the game that will reflect your real life progression. <br>
