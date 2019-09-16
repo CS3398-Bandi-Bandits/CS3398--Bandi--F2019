@@ -1,5 +1,5 @@
 # Fit Warriors
-Fit Warriors application
+Fit Warriors mobile application
 
 ## Table of contents
 * [General info](#general-info)
@@ -28,16 +28,16 @@ Andriod Studio <br>
 Phone <br>
 
 ## Features
-Real Life Leveling <br>
-  Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as   well. <br>
-  I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
+Real Life Leveling: <br>
+ &emsp; Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as   well. <br>
+ &emsp;&emsp; I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
   
 View Stats: <br>
-  View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
-  I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
+  &emsp; View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
+  &emsp;&emsp; I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
   
-Graphical User Interface <br>
-  View a user interface that displays your progression in the game that will reflect your real life progression. 
+Graphical User Interface: <br>
+  &emsp; View a user interface that displays your progression in the game that will reflect your real life progression. <br>
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
