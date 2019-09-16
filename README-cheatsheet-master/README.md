@@ -1,11 +1,11 @@
 # Fit Warriors
-Fit Warriors mobile application
+![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
 
 ## Table of contents
 * [General info](#general-info)
-* [Logo](#logo)
 * [Technologies](#technologies)
 * [Features](#features)
+* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Status](#status)
 * [Inspiration](#inspiration)
@@ -15,9 +15,6 @@ Fit Warriors mobile application
 Developers: Dakota Ruhl, Kenneth Omo, Jose Hernandez, Victor Hernandez, Devon Tyson
 
 The purpose of this project is to create an application that tracks exercise data to level up a character. The intended audience is for people who would like to get fit in a fun way. We hope that this application impacts the well-being of our users by inspiring them to go to the gym. 
-
-## Logo
-![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
 
 ## Technologies
 Unity game engine <br>
@@ -38,6 +35,9 @@ Phone <br>
   
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
+
+## Screenshots
+Screenshots
 
 ## Setup
 Describe how to install / setup your local environement / add link to demo version.
