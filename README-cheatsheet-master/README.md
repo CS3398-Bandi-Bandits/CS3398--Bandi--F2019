@@ -27,6 +27,7 @@ Android Phone <br>
 ## Features
  <b>Personal character:</b> <br> 
  Have a virtual character that represents the real you. This character will level up as you workout.
+ I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).
   
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
@@ -39,6 +40,7 @@ Android Phone <br>
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
 I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.
+
 
 ## Screenshots
 Screenshots
