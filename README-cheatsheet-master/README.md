@@ -38,6 +38,7 @@ Android Phone <br>
   
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
+I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.
 
 ## Screenshots
 Screenshots
