@@ -35,7 +35,7 @@ Android Phone <br>
   
 <b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps each day. As you progress your workouts in real life, you character will progress as well. <br>
- I, Victor, as a person who is physically active, want a game that rewards me for daily workouts so that I won't lose the             motivation to continue my workouts. <br>
+I, Jose, as an advanced weightlifter want an app that organizes workout schedule in a way that allows me to track my improvements over time.<br>
   
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
