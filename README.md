@@ -41,6 +41,11 @@ Android Phone <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
 I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.
 
+<b>Pedometer:</b> <br>
+Built in pedometer used to track steps right from your phone. <br>
+I, Kenny, as a person who walks to campus from really far away, would like to keep track of how many
+steps it takes to get to my class.
+
 
 ## Screenshots
 Screenshots
