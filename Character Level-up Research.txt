@@ -1,0 +1,21 @@
+Jose Herrera
+Jh1958
+24 Sep 2019
+
+	Our team requires a level up system for the game aspect of our application.  At first I tried to devise my own,
+but, instead decided to seek some precedence.  I visited the following websites...
+
+https://answers.unity.com/questions/125359/rpg-algorithms.html
+
+https://gamedev.stackexchange.com/questions/13638/algorithm-for-dynamically-calculating-a-level-based-on-experience-points
+								
+http://howtomakeanrpg.com/a/how-to-make-an-rpg-levels.html
+
+With the information I found i was able to find a function that I think works well for our project.
+
+int nextLevel(int currentLevel){
+	double difficulty = 1.5;
+	int basexp = 1000;
+	return basexp * pwr(level, exponent);
+}
+
