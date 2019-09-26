@@ -6,30 +6,18 @@ import java.io.*;
 
 public class MainApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
 		
-		// Create all database connections
-		// Create main UI instance
-		Player mainPlayer = new Player("Username");
-		Controller manager = new Controller(mainPlayer);
-		View viewer = new View(manager);
+		View.beginningPrompt();
+		
 		
 		//testing
-		viewer.showStats();
+		View.showStats();
 		
-		Skill skill = mainPlayer.getStrengthSkill();
 		int xp = 200000;
-		manager.trainingMode(skill, xp);
+		Skill skill = Controller.player.getStrengthSkill();
+		Controller.trainingMode(skill, xp);
 		
-		viewer.showStats();
+		View.showStats();
 	}
-	
-	public static void saveData() throws FileNotFoundException {
-		
-	}
-	
-	public static void getData() throws FileNotFoundException {
-		
-	}
-
 }

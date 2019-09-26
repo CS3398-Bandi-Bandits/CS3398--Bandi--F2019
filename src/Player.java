@@ -1,8 +1,10 @@
+import java.io.Serializable;
+
 /**
  * 	@author Devon Tyson
  */
 
-public class Player implements IFightable {
+public class Player implements IFightable, Serializable {
 	
 	private Skill strength, defence, hp;
 	private int combatLevel;

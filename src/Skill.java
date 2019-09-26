@@ -1,8 +1,10 @@
+import java.io.Serializable;
+
 /**
  * 	@author Devon Tyson
  */
 
-public abstract class Skill implements ITrainable {
+public abstract class Skill implements ITrainable, Serializable {
 	
 	private static final int MAX_LEVEL = 99;
 	protected int level;
@@ -42,7 +44,7 @@ public abstract class Skill implements ITrainable {
 		}
 	}
 	
-	public void checkXp() {
+	protected void checkXp() {
 		int totalXp = this.xp;
 		while(totalXp > this.goalXp) {
 			levelUp();
