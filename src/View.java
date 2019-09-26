@@ -21,18 +21,23 @@ public class View {
 		System.out.println();
 		
 		switch(num) {
-		case 1:
-			// if database already exists, don't overwrite user data
+		case 1: // create new user
 			boolean exist = Controller.doesDatabaseExist();
+			
+			// if database doesn't exist, create new user
 			if(exist == false) {
 				String name = getNewUsername();
 				Controller.createPlayer(name);
+				
+			// if database already exists, don't overwrite user data
 			} else {
 				System.out.println("User account already exists!");
+				System.out.println();
+				
 				Controller.getData();
 			}
 		
-		case 2:
+		case 2: // existing user
 			Controller.getData();
 		}
 		mainScreen();
@@ -118,8 +123,9 @@ public class View {
 		
 		
 		//// this is where Jose's workout data will come in and replace this
-		System.out.println("Enter xp amount: ");
+		System.out.print("Enter xp amount: ");
 		xp = scan.nextInt();
+		System.out.println();
 		
 		switch(num) {
 			case 1:

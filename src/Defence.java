@@ -16,4 +16,9 @@ public class Defence extends Skill {
 	public void train(int addedXp) {
 		super.train(addedXp);
 	}	
+	
+	@Override
+	public String toString() {
+		return "Defence";
+	}
 }

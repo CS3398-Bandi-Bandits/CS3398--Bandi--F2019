@@ -15,5 +15,10 @@ public class Strength extends Skill {
 	@Override
 	public void train(int addedXp) {
 		super.train(addedXp);	
-	}	
+	}
+	
+	@Override
+	public String toString() {
+		return "Strength";
+	}
 }

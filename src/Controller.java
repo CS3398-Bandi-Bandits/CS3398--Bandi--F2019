@@ -8,6 +8,7 @@ import java.util.*;
 public class Controller {
 	
 	public static Player player;
+	public static final String DATABASE_FILE = "database.dat";
 
 	public static HashMap<String,Integer> playerStats() {
 		
@@ -22,18 +23,19 @@ public class Controller {
 		
 		HashMap<String, Integer> stats = new HashMap<String, Integer>();
 		stats.put("Combat", combatLevel);
-		stats.put("Strength", strengthLevel);
-		stats.put("Defence", defenceLevel);
-		stats.put("HitPoints", hpLevel);
+		stats.put(strength.toString(), strengthLevel);
+		stats.put(defence.toString(), defenceLevel);
+		stats.put(hp.toString(), hpLevel);
 		
 		return stats;
 	}
 	
-	public static void trainingMode(Skill skill, int addedXp) {
+	public static void trainingMode(Skill skill, int addedXp) throws IOException {
 		
 		Skill hp = player.getHitPointsSkill();
 		player.trainSkill(skill, addedXp);
 		player.trainSkill(hp, addedXp);
+		saveData();
 	}
 	
 	public static void battleMode(Player other) {
@@ -50,7 +52,7 @@ public class Controller {
 	
 	public static void saveData() throws IOException {
 		
-		File file = new File("database.dat");
+		File file = new File(DATABASE_FILE);
 		
 		FileOutputStream fileStream = new FileOutputStream(file);
 		ObjectOutputStream out = new ObjectOutputStream(fileStream);
@@ -64,7 +66,7 @@ public class Controller {
 	public static void getData() throws IOException, ClassNotFoundException {
 		
 		try {
-			File file = new File("database.dat");
+			File file = new File(DATABASE_FILE);
 			
 			// if file doesn't exist, user must create a new player
 			if(!file.exists()) {
@@ -87,7 +89,7 @@ public class Controller {
 	
 	public static boolean doesDatabaseExist() {
 		
-		File file = new File("database.dat");
+		File file = new File(DATABASE_FILE);
 		if(file.exists()) {
 			return true;
 		} else {

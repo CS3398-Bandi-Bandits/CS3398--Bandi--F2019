@@ -17,4 +17,9 @@ public class Hitpoints extends Skill {
 		super.xp += (addedXp/5); // hp levels slower than other skills
 		checkXp();
 	}
+	
+	@Override
+	public String toString() {
+		return "Hitpoints";
+	}
 }
