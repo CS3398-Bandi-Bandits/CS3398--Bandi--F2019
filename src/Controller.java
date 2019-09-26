@@ -22,7 +22,7 @@ public class Controller {
 		int hpLevel = hp.getLevel();
 		
 		HashMap<String, Integer> stats = new HashMap<String, Integer>();
-		stats.put("Combat", combatLevel);
+		stats.put(player.getCombatString(), combatLevel);
 		stats.put(strength.toString(), strengthLevel);
 		stats.put(defence.toString(), defenceLevel);
 		stats.put(hp.toString(), hpLevel);
@@ -65,26 +65,14 @@ public class Controller {
 	
 	public static void getData() throws IOException, ClassNotFoundException {
 		
-		try {
-			File file = new File(DATABASE_FILE);
+		File file = new File(DATABASE_FILE);
 			
-			// if file doesn't exist, user must create a new player
-			if(!file.exists()) {
-				String name = View.getNewUsername("Error, user not found.");
-				createPlayer(name);
-			}
+		FileInputStream fileStream = new FileInputStream(file);
+		ObjectInputStream in = new ObjectInputStream(fileStream);
+		player = (Player) in.readObject();
 			
-			FileInputStream fileStream = new FileInputStream(file);
-			ObjectInputStream in = new ObjectInputStream(fileStream);
-			player = (Player) in.readObject();
-			
-			in.close();
-			fileStream.close();
-			
-		} catch(ClassNotFoundException e) {
-			
-			// exception handled above
-		}
+		in.close();
+		fileStream.close();
 	}
 	
 	public static boolean doesDatabaseExist() {

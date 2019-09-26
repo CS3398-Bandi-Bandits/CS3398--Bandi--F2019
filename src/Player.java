@@ -68,6 +68,10 @@ public class Player implements IFightable, Serializable {
 		
 		skill.train(addedXp);
 	}
+	
+	public String getCombatString() {
+		return "Combat";
+	}
 
 	@Override
 	public void attack() {

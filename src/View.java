@@ -5,41 +5,29 @@
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map.Entry;
+import java.util.ResourceBundle.Control;
 import java.util.Scanner;
 
 public class View {
 
 	public static void beginningPrompt() throws IOException, ClassNotFoundException {
 		
-		System.out.println("1. Create User");
-		System.out.println("2. Existing User");
-		System.out.println();
-		Scanner scan = new Scanner(System.in);
+		boolean exist = Controller.doesDatabaseExist();
 		
-		System.out.print("Enter selection: ");
-		int num = scan.nextInt();
-		System.out.println();
-		
-		switch(num) {
-		case 1: // create new user
-			boolean exist = Controller.doesDatabaseExist();
-			
-			// if database doesn't exist, create new user
-			if(exist == false) {
-				String name = getNewUsername();
-				Controller.createPlayer(name);
-				
-			// if database already exists, don't overwrite user data
-			} else {
-				System.out.println("User account already exists!");
-				System.out.println();
-				
-				Controller.getData();
-			}
-		
-		case 2: // existing user
+		// if account exists, go straight to the main page
+		if(exist == true) {
 			Controller.getData();
+			System.out.println("Welcome back, " + Controller.player.getUsername() + "!");
+			System.out.println();
+			
+		// otherwise, create a new user
+		} else {
+			System.out.println("Please create an account!");
+			System.out.println();
+			String name = getNewUsername();
+			Controller.createPlayer(name);
 		}
+		
 		mainScreen();
 	}
 	
