@@ -30,4 +30,4 @@ void viewStats(): temporary way to view players statistics
 String getNewUsername(): get a username for a new player
 void beginningPrompt(): have user select 'Existing User' or 'New User' option
 void mainScreen(): choose to view stats, train or exit
-void trainSkill(): choose which stat to train and enter xp amount
+void trainingScreen(): choose which stat to train and enter xp amount
