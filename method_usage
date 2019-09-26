@@ -33,6 +33,7 @@ void mainScreen(): choose to view stats, train or exit
 void trainingScreen(): choose which stat to train and enter xp amount
 
 
+-----------------------
 Note:
 When you Create New User, if any old user exists, it will be replaced with the new user.
 This is a bug that can be fixed in a few ways. Will discuss solutions later.
