@@ -10,14 +10,5 @@ public class MainApp {
 		
 		View.beginningPrompt();
 		
-		
-		//testing
-		View.showStats();
-		
-		int xp = 200000;
-		Skill skill = Controller.player.getStrengthSkill();
-		Controller.trainingMode(skill, xp);
-		
-		View.showStats();
 	}
 }

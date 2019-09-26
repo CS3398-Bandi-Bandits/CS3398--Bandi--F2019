@@ -81,7 +81,5 @@ public class Controller {
 			String name = View.getNewUsername();
 			createPlayer(name);
 		}
-		
 	}
-	
 }
