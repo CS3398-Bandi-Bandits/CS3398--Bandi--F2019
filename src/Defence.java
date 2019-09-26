@@ -15,7 +15,5 @@ public class Defence extends Skill {
 	@Override
 	public void train(int addedXp) {
 		super.train(addedXp);
-		
 	}	
-
 }

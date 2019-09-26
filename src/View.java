@@ -8,30 +8,9 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class View {
-	
 
-	public static void showStats() throws IOException {
-		HashMap<String, Integer> stats = Controller.playerStats();
-		
-		for (Entry<String, Integer> entry : stats.entrySet())  
-            System.out.println(entry.getKey() + 
-                             ": " + entry.getValue());
-		System.out.println();
-		mainScreen();
-	}
-
-	public static String getNewUsername() {
-		System.out.print("Enter new username: ");
-		
-		Scanner scan = new Scanner(System.in);
-		String name = scan.nextLine();
-		
-		System.out.println();
-		
-		return name;
-	}
-	
 	public static void beginningPrompt() throws IOException, ClassNotFoundException {
+		
 		System.out.println("1. Create User");
 		System.out.println("2. Existing User");
 		System.out.println();
@@ -52,7 +31,20 @@ public class View {
 		mainScreen();
 	}
 	
+	public static String getNewUsername() {
+		
+		System.out.print("Enter new username: ");
+		
+		Scanner scan = new Scanner(System.in);
+		String name = scan.nextLine();
+		
+		System.out.println();
+		
+		return name;
+	}
+	
 	public static void mainScreen() throws IOException {
+		
 		System.out.println("1. View Stats");
 		System.out.println("2. Train Skill");
 		System.out.println("3. Exit");
@@ -64,19 +56,30 @@ public class View {
 		int num = scan.nextInt();
 		
 		switch(num) {
-		case 1:
-			showStats();
+			case 1:
+				showStats();
 		
-		case 2:
-			trainSkill();
+			case 2:
+				trainingScreen();
 			
-		case 3:
-			Controller.saveData();
-			System.exit(0);
+			case 3:
+				Controller.saveData();
+				System.exit(0);
 		}
 	}
 	
-	public static void trainSkill() throws IOException {
+	public static void showStats() throws IOException {
+		
+		HashMap<String, Integer> stats = Controller.playerStats();
+		
+		for (Entry<String, Integer> entry : stats.entrySet())  
+            System.out.println(entry.getKey() + 
+                             ": " + entry.getValue());
+		System.out.println();
+		mainScreen();
+	}
+	
+	public static void trainingScreen() throws IOException {
 		
 		Skill skill;
 		int xp;
@@ -94,17 +97,15 @@ public class View {
 		xp = scan.nextInt();
 		
 		switch(num) {
-		case 1:
-			skill = Controller.player.getStrengthSkill();
+			case 1:
+				skill = Controller.player.getStrengthSkill();
+				Controller.trainingMode(skill, xp);
 		
-		case 2:
-			skill = Controller.player.getDefenceSkill();
-			
-		default:
-			skill = Controller.player.getStrengthSkill();
+			case 2:
+				skill = Controller.player.getDefenceSkill();
+				Controller.trainingMode(skill, xp);
 		}
 		
-		Controller.trainingMode(skill, xp);
 		mainScreen();
 	}
 }

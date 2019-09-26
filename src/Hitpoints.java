@@ -2,7 +2,6 @@
  * 	@author Devon Tyson
  */
 
-
 public class Hitpoints extends Skill {
 	
 	int level, xp, goalXp;
@@ -12,7 +11,6 @@ public class Hitpoints extends Skill {
 		this.xp = super.xp;
 		this.goalXp = super.goalXp;	
 	}
-	
 	
 	@Override
 	public void train(int addedXp) {
