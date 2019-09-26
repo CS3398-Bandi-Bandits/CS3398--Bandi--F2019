@@ -17,13 +17,20 @@ public class View {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Enter selection: ");
-		System.out.println();
 		int num = scan.nextInt();
+		System.out.println();
 		
 		switch(num) {
 		case 1:
-			String name = getNewUsername();
-			Controller.createPlayer(name);
+			// if database already exists, don't overwrite user data
+			boolean exist = Controller.doesDatabaseExist();
+			if(exist == false) {
+				String name = getNewUsername();
+				Controller.createPlayer(name);
+			} else {
+				System.out.println("User account already exists!");
+				Controller.getData();
+			}
 		
 		case 2:
 			Controller.getData();
@@ -43,6 +50,20 @@ public class View {
 		return name;
 	}
 	
+	// alternate function for error handling
+	public static String getNewUsername(String error) {
+		
+		System.out.println(error);
+		System.out.print("Enter new username: ");
+		
+		Scanner scan = new Scanner(System.in);
+		String name = scan.nextLine();
+		
+		System.out.println();
+		
+		return name;
+	}
+	
 	public static void mainScreen() throws IOException {
 		
 		System.out.println("1. View Stats");
@@ -52,15 +73,17 @@ public class View {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Enter selection: ");
-		System.out.println();
 		int num = scan.nextInt();
+		System.out.println();
 		
 		switch(num) {
 			case 1:
 				showStats();
+				break;
 		
 			case 2:
 				trainingScreen();
+				break;
 			
 			case 3:
 				Controller.saveData();
@@ -90,9 +113,11 @@ public class View {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Enter selection: ");
-		System.out.println();
 		int num = scan.nextInt();
+		System.out.println();
 		
+		
+		//// this is where Jose's workout data will come in and replace this
 		System.out.println("Enter xp amount: ");
 		xp = scan.nextInt();
 		
@@ -100,10 +125,12 @@ public class View {
 			case 1:
 				skill = Controller.player.getStrengthSkill();
 				Controller.trainingMode(skill, xp);
+				break;
 		
 			case 2:
 				skill = Controller.player.getDefenceSkill();
 				Controller.trainingMode(skill, xp);
+				break;
 		}
 		
 		mainScreen();

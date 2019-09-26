@@ -50,21 +50,30 @@ public class Controller {
 	
 	public static void saveData() throws IOException {
 		
-		FileOutputStream file = new FileOutputStream("database.dat");
-		ObjectOutputStream out = new ObjectOutputStream(file);
+		File file = new File("database.dat");
+		
+		FileOutputStream fileStream = new FileOutputStream(file);
+		ObjectOutputStream out = new ObjectOutputStream(fileStream);
 		
 		out.writeObject(player);
 		
 		out.close();
-		file.close();
+		fileStream.close();
 	}
 	
 	public static void getData() throws IOException, ClassNotFoundException {
 		
 		try {
-			FileInputStream fileStream = new FileInputStream("database.dat");
-			ObjectInputStream in = new ObjectInputStream(fileStream);
+			File file = new File("database.dat");
 			
+			// if file doesn't exist, user must create a new player
+			if(!file.exists()) {
+				String name = View.getNewUsername("Error, user not found.");
+				createPlayer(name);
+			}
+			
+			FileInputStream fileStream = new FileInputStream(file);
+			ObjectInputStream in = new ObjectInputStream(fileStream);
 			player = (Player) in.readObject();
 			
 			in.close();
@@ -72,8 +81,17 @@ public class Controller {
 			
 		} catch(ClassNotFoundException e) {
 			
-			String name = View.getNewUsername();
-			createPlayer(name);
+			// exception handled above
+		}
+	}
+	
+	public static boolean doesDatabaseExist() {
+		
+		File file = new File("database.dat");
+		if(file.exists()) {
+			return true;
+		} else {
+			return false;
 		}
 	}
 }
