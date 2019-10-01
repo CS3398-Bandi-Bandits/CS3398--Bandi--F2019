@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.io.*;
 
 public class WorkoutLog implements Serializable{
-    private String[] options;
+    private ArrayList<String> options;
     private ArrayList<Exercise> backLog;
     private Exercise current;
     private Integer improvementExp,
                     baseExp;
 
-    public WorkoutLog(String[] options){
-        this.options = options;
+    public WorkoutLog(){
+        this.options = new ArrayList<>();
+        this.options.add("Bench Press");
+        this.options.add("Squat");
+        this.options.add("Dead-Lift");
         this.improvementExp = 0;
         this.baseExp = 0;
         this.backLog = new ArrayList<>();
@@ -23,22 +26,17 @@ public class WorkoutLog implements Serializable{
 
     public void logExercise() {
 
-        if (backLog.isEmpty())
-            backLog.add(current);
-
-        else{
             for (int i = 0; i < backLog.size(); i++) {
 
                 if (backLog.get(i).getName().equals(current.getName())) {
                     improvementExp = calcImprovementExp(backLog.get(i), current);
                     backLog.remove(i);
-                    backLog.add(i,current);
+                    backLog.add(i, current);
                 }
                 else
                     backLog.add(current);
-
             }
-        }
+
 
         baseExp = calcBaseExp(current);
     }
@@ -93,8 +91,8 @@ public class WorkoutLog implements Serializable{
         return backLog;
     }
 
-    public void setOptions(String[] options) {
-        this.options = options;
+    public ArrayList<String> getOptions() {
+        return options;
     }
 
     public int getTotalExp(){
