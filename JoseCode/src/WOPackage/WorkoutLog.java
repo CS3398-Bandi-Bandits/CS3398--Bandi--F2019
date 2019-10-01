@@ -26,6 +26,8 @@ public class WorkoutLog implements Serializable{
 
     public void logExercise() {
 
+        if (!backLog.isEmpty())
+
             for (int i = 0; i < backLog.size(); i++) {
 
                 if (backLog.get(i).getName().equals(current.getName())) {
@@ -36,7 +38,8 @@ public class WorkoutLog implements Serializable{
                 else
                     backLog.add(current);
             }
-
+        else
+            backLog.add(current);
 
         baseExp = calcBaseExp(current);
     }
