@@ -3,26 +3,29 @@
  */
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
-import java.util.ResourceBundle.Control;
 import java.util.Scanner;
+
+import WOPackage.*;
+
 
 public class View {
 
 	public static void beginningPrompt() throws IOException, ClassNotFoundException {
 		
-		boolean exist = Controller.doesDatabaseExist();
+		boolean exists = Controller.doesDatabaseExist();
 		
 		// if account exists, go straight to the main page
-		if(exist == true) {
+		if(exists == true) {
 			Controller.getData();
-			System.out.println("Welcome back, " + Controller.player.getUsername() + "!");
+			System.out.println("Welcome back, " + Controller.getPlayer().getUsername() + "!");
 			System.out.println();
 			
 		// otherwise, create a new user
 		} else {
-			System.out.println("Please create an account!");
+			System.out.println("Please create an account.");
 			System.out.println();
 			String name = getNewUsername();
 			Controller.createPlayer(name);
@@ -31,22 +34,8 @@ public class View {
 		mainScreen();
 	}
 	
-	public static String getNewUsername() {
+	private static String getNewUsername() {
 		
-		System.out.print("Enter new username: ");
-		
-		Scanner scan = new Scanner(System.in);
-		String name = scan.nextLine();
-		
-		System.out.println();
-		
-		return name;
-	}
-	
-	// alternate function for error handling
-	public static String getNewUsername(String error) {
-		
-		System.out.println(error);
 		System.out.print("Enter new username: ");
 		
 		Scanner scan = new Scanner(System.in);
@@ -98,35 +87,77 @@ public class View {
 	public static void trainingScreen() throws IOException {
 		
 		Skill skill;
-		int xp;
+		WorkoutLog log = new WorkoutLog();
 		
-		System.out.println("1. Train strength");
-		System.out.println("2. Train defence");
-		System.out.println();
-		Scanner scan = new Scanner(System.in);
+		ArrayList<String> options = log.getOptions();
 		
-		System.out.print("Enter selection: ");
-		int num = scan.nextInt();
-		System.out.println();
-		
-		
-		//// this is where Jose's workout data will come in and replace this
-		System.out.print("Enter xp amount: ");
-		xp = scan.nextInt();
-		System.out.println();
-		
-		switch(num) {
-			case 1:
-				skill = Controller.player.getStrengthSkill();
-				Controller.trainingMode(skill, xp);
-				break;
-		
-			case 2:
-				skill = Controller.player.getDefenceSkill();
-				Controller.trainingMode(skill, xp);
-				break;
+		System.out.println("Select a workout:");
+		for(int i = 0; i < options.size(); i++) {
+			System.out.println(i+1 + ": " + options.get(i));
 		}
 		
+		System.out.println();
+		System.out.print("Enter selection: ");
+		
+		Scanner scan = new Scanner(System.in);
+		int selected = scan.nextInt();
+		String name;
+		
+		if(selected == 1) {
+			name = "bench press";
+		} else if(selected == 2) {
+			name = "squat";
+		} else {
+			name = "dead-lift";
+		}
+		
+		log.createExercise(name);
+		System.out.println();
+		
+		System.out.print("Add reps: ");
+		int reps = scan.nextInt();
+		System.out.println();
+		
+		System.out.print("Add weight: ");
+		double weight = scan.nextDouble();
+		System.out.println();
+		
+		log.getCurrent().addSet(reps, weight);
+		
+		log.logExercise();
+		int xpTotal = log.getTotalExp();
+		
+		if(log.getCurrent().getName().toLowerCase().equals("squat")) {
+			skill = Controller.getPlayer().getDefenceSkill();
+		} else {
+			skill = Controller.getPlayer().getStrengthSkill();
+		}
+		
+		
+		Controller.trainingMode(skill, xpTotal);
+		System.out.println();
+		System.out.println("You gained " + xpTotal + " experience!");
+		System.out.println();
+		
+		/*
+		 * System.out.println("1. Train strength");
+		 * System.out.println("2. Train defence"); System.out.println(); Scanner scan =
+		 * new Scanner(System.in);
+		 * 
+		 * System.out.print("Enter selection: "); int num = scan.nextInt();
+		 * System.out.println();
+		 * 
+		 * 
+		 * //// this is where Jose's workout data will come in and replace this
+		 * System.out.print("Enter xp amount: "); xp = scan.nextInt();
+		 * System.out.println();
+		 * 
+		 * switch(num) { case 1: skill = Controller.getPlayer().getStrengthSkill();
+		 * Controller.trainingMode(skill, xp); break;
+		 * 
+		 * case 2: skill = Controller.getPlayer().getDefenceSkill();
+		 * Controller.trainingMode(skill, xp); break; }
+		 */
 		mainScreen();
 	}
 }

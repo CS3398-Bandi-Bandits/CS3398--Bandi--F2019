@@ -14,7 +14,7 @@ public class Hitpoints extends Skill {
 	
 	@Override
 	public void train(int addedXp) {
-		super.xp += (addedXp/5); // hp levels slower than other skills
+		super.xp += (addedXp/4); // hp levels slower than other skills
 		checkXp();
 	}
 	

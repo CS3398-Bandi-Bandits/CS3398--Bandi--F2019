@@ -16,7 +16,7 @@ public abstract class Skill implements ITrainable, Serializable {
 		
 		this.level = 1;
 		this.xp = 0;
-		this.goalXp = 2000;
+		this.goalXp = 3000;
 	}
 	
 	// constructor for existing players
@@ -61,8 +61,8 @@ public abstract class Skill implements ITrainable, Serializable {
 	
 	private void calculateGoalXp() {
 		
-		int addedXp = this.level*200 + 2000;
-		this.goalXp = addedXp;
+		int addedXp = this.level*300 + 1000;
+		this.goalXp += addedXp;
 	}
 	
 	@Override

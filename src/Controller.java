@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.*;
+import WOPackage.*;
 
 /**
  * 	@author Devon Tyson
@@ -7,8 +8,9 @@ import java.util.*;
 
 public class Controller {
 	
-	public static Player player;
-	public static final String DATABASE_FILE = "database.dat";
+	private static Player player;
+	private static final String DATABASE_FILE = "database.dat";
+	
 
 	public static HashMap<String,Integer> playerStats() {
 		
@@ -50,6 +52,11 @@ public class Controller {
 		saveData();
 	}
 	
+	public static Player getPlayer() {
+		
+		return player;
+	}
+	
 	public static void saveData() throws IOException {
 		
 		File file = new File(DATABASE_FILE);
@@ -69,6 +76,7 @@ public class Controller {
 			
 		FileInputStream fileStream = new FileInputStream(file);
 		ObjectInputStream in = new ObjectInputStream(fileStream);
+		
 		player = (Player) in.readObject();
 			
 		in.close();
@@ -78,6 +86,7 @@ public class Controller {
 	public static boolean doesDatabaseExist() {
 		
 		File file = new File(DATABASE_FILE);
+		
 		if(file.exists()) {
 			return true;
 		} else {
