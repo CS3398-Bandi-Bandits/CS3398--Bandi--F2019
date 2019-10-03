@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fit Warriors</string>
+    <string name="edit_username">Username</string>
+    <string name="stats_button">View Stats</string>
+    <string name="train_button">Training</string>
+    <string name="battle_button">Battle</string>
+    <string name="stats_view">This is where user stats will go.</string>
+    <string name="training_page">This will be the Training Page.</string>
+    <string name="battle_page">This will be the Battle Page.</string>
+    <string name="login_page">This is the Login Page.</string>
+    <string name="user_name">Input username</string>
+    <string name="button_submit">Submit</string>
+</resources>
