@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Button BtnStop;
     private Button View;
 
+    public int getSteps() {
+        return numSteps;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
