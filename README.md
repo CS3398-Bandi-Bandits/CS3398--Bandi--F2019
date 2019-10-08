@@ -44,7 +44,12 @@ I, Jose, as a user with little computer know-how I want an intuitive GUI so that
 <b>Biometrics:</b> <br>
 Built in pedometer used to track steps right from your phone. <br>
 I, Kenny, as a person who walks to campus from really far away, would like to keep track of how many
-steps it takes to get to my class.
+steps it takes to get to my class.<br><br>
+Completed By Kenneth Omo<br>
+Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
+This code is used tracking the number of steps a person can take while the application is open.
+
+
 
 
 ## Screenshots
