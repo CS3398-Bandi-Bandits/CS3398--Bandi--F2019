@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">Pedometer</string>
-    <string name="info">TextView</string>
-    <string name="steps">TextView</string>
-</resources>
