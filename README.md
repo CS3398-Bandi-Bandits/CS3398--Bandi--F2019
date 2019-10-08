@@ -27,8 +27,8 @@ Android Phone <br>
 ## Features
  <b>Personal character:</b> <br> 
  Have a virtual character that represents the real you. This character will level up as you workout.<br>
-  I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
-  dakota
+  I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br><BR>
+  Completed by Dakota<BR>
   
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
