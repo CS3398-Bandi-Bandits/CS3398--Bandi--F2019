@@ -32,12 +32,12 @@ Android Phone <br>
   
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
-  I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br>
+  I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br><br>
   Completed by Devon Tyson.
   
 <b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps and logging workouts each day. As you progress your workouts in real life, you character will progress as well. <br>
-I, Jose, as an intermediate weightlifter want an app that organizes workout schedule in a way that allows me to track my improvements over time.<br>
+I, Jose, as an intermediate weightlifter want an app that organizes workout schedule in a way that allows me to track my improvements over time.<br><br>
 Completed by Jose Herrera.  Source code can be found under src/WOPackage.  A WorkoutLog class is created when training mode is selected.  Users enter workouts and then the WorkoutLog class calculates an experience number.  Victor's Gui sends the number to Devon's Player object, which then potentially levels up.  
   
 <b>Graphical User Interface:</b> <br>
@@ -71,7 +71,27 @@ Usage:
 `put-your-code-here`
 
 ## Status
-Project is: In progress
+Project is in progress
+
+Jose:
+- status: Workout package completed, integrated code into main frame
+- next step: improve the code, add more workouts, increase functionality
+
+Victor:
+- status: GUI prototype completed, currently working relevant code into GUI
+- next step: integrate code fully, fix bugs, connect battle mode
+
+Dakota:
+- status: Battle module prototype completed, created base game setup with players and skills/health
+- next step: build onto the game, add attack animations, implement actual battle
+
+Kenny:
+- status: Pedometer completed, built temporary testing methods
+- next step: integrate with Victor's GUI
+
+Devon:
+- status: Built main frame, built player with all applicable skills, integrated workout package and part of GUI
+- next step: learn how to send jar files as plug-ins to unity, add more skills
 
 ## Inspiration
 Credits here
