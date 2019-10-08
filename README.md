@@ -48,8 +48,8 @@ Completed by Jose Herrera.<BR>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
 I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.<br><br>
 Completed by Victor Hernandez<br>
-Source code can be found under GUIPrototype.zip and can be accessed by Andriod Studio.
-This code is the user interface for the application. This code is used throughout the application as it is the face of the app.
+Source code can be found under Victor's Updated src and can be accessed by Android Studio.
+This code is the graphical user interface for the application. This code is used throughout the application as it is the face of the app. The GUI uses buttons to navigate between different activities within the app, such as displaying the Training Page or adding reps to a workout.
 
 
 <b>Biometrics:</b> <br>
