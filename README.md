@@ -33,12 +33,14 @@ Android Phone <br>
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
   I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br><br>
-  Completed by Devon Tyson.
+  Completed by Devon Tyson.<BR>
+ 
   
 <b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps and logging workouts each day. As you progress your workouts in real life, you character will progress as well. <br>
 I, Jose, as an intermediate weightlifter want an app that organizes workout schedule in a way that allows me to track my improvements over time.<br><br>
-Completed by Jose Herrera.  Source code can be found under src/WOPackage.  A WorkoutLog class is created when training mode is selected.  Users enter workouts and then the WorkoutLog class calculates an experience number.  Victor's Gui sends the number to Devon's Player object, which then potentially levels up.  
+Completed by Jose Herrera.<BR>
+ Source code can be found under src/WOPackage.  A WorkoutLog class is created when training mode is selected.  Users enter workouts and then the WorkoutLog class calculates an experience number.  Victor's Gui sends the number to Devon's Player object, which then potentially levels up.  
   
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
