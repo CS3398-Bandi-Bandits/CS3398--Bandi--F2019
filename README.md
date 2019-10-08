@@ -34,20 +34,21 @@ Android Phone <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
   I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br><br>
   Completed by Devon Tyson.<BR>
+ Source code can be found in the src file on Github. Files include Player, Skill and related Skill classes, the 2 interfaces - Fightable and Trainable, Controller, MainApp and View. The main frame runs the app, while the player class represents the user. The user has skills and is able to train them. The stats are saved into a database that will load if a player already exists and will create one if it doesn't. My code is used throughout the game as it drives everything and connects everything together.
  
   
 <b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps and logging workouts each day. As you progress your workouts in real life, you character will progress as well. <br>
 I, Jose, as an intermediate weightlifter want an app that organizes workout schedule in a way that allows me to track my improvements over time.<br><br>
 Completed by Jose Herrera.<BR>
- Source code can be found under src/WOPackage.  A WorkoutLog class is created when training mode is selected.  Users enter workouts and then the WorkoutLog class calculates an experience number.  Victor's Gui sends the number to Devon's Player object, which then potentially levels up.  
+ Source code can be found under src/WOPackage.  A WorkoutLog class is created when training mode is selected.  Users enter workouts and then the WorkoutLog class calculates an experience number.  Victor's Gui sends the number to Devon's Player object, which then potentially levels up.  This code is currently used during training mode.
   
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
 I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.<br><br>
 Completed by Victor Hernandez<br>
 Source code can be found under GUIPrototype.zip and can be accessed by Andriod Studio.
-This code is the user interface for the application.
+This code is the user interface for the application. This code is used throughout the application as it is the face of the app.
 
 
 <b>Biometrics:</b> <br>
@@ -56,8 +57,7 @@ I, Kenny, as a person who walks to campus from really far away, would like to ke
 steps it takes to get to my class.<br><br>
 Completed By Kenneth Omo<br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
-This code is used for tracking the number of steps a person can take while the application is open.
-train mode 
+This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
 
 
 
