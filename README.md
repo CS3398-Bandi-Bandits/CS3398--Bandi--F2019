@@ -12,7 +12,7 @@
 * [Contact](#contact)
 
 ## General info
-<u>Developers:</u> Dakota Ruhl, Kenneth Omo, Jose , Victor Hernandez, Devon Tyson
+<u>Developers:</u> Dakota Ruhl, Kenneth Omo, Jose Herrera, Victor Hernandez, Devon Tyson
 
 <center>The purpose of this project is to create an application that tracks exercise data to level up a character. The intended audience is for people who would like to get fit in a fun way. We hope that this application impacts the well-being of our users by inspiring them to go to the gym. </center>
 
