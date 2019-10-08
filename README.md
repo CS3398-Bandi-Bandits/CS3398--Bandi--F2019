@@ -29,6 +29,7 @@ Android Phone <br>
  Have a virtual character that represents the real you. This character will level up as you workout.<br>
   I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br><BR>
   Completed by Dakota<BR>
+ The Unity Project files can be unpacked from UnityGame.zip (Requires Unity installed) The scripts for game objects are in a separate folder called Script. The Unity project will be our battle module for the game. When players want to battle with their trained skills they will enter this battle module and fight eachother using Unity's Game Engine. The Battle Module should populate the Hero with all the stats and attriubutes tracked by the backend java source code. 
   
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
