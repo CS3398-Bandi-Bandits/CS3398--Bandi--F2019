@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.guiprototype">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AddSetActivityDL"
+            android:label="Add Deadlift Sets"
+            android:parentActivityName=".DeadliftActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DeadliftActivity" />
+        </activity>
+        <activity
+            android:name=".DeadliftActivity"
+            android:label="Deadlifts"
+            android:parentActivityName=".TrainingActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingActivity" />
+        </activity>
+        <activity
+            android:name=".AddSetActivitySquats"
+            android:label="Add Squat Sets"
+            android:parentActivityName=".SquatsActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SquatsActivity" />
+        </activity>
+        <activity
+            android:name=".SquatsActivity"
+            android:label="Squats"
+            android:parentActivityName=".TrainingActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingActivity" />
+        </activity>
+        <activity
+            android:name=".AddSetActivityBP"
+            android:label="Add Bench Press Sets"
+            android:parentActivityName=".BenchPressActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BenchPressActivity" />
+        </activity>
+        <activity
+            android:name=".BenchPressActivity"
+            android:label="Bench Press"
+            android:parentActivityName=".TrainingActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TrainingActivity" />
+        </activity>
+        <activity
+            android:name=".BattleActivity"
+            android:label="Battle"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".TrainingActivity"
+            android:label="Training"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".StatsActivity"
+            android:label="User Stats"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Main Page" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="Start Page" />
+    </application>
+
+</manifest>
