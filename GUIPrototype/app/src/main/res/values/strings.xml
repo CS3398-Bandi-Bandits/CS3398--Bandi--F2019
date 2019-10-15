@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Fit Warriors</string>
+    <string name="edit_username">user</string>
+    <string name="stats_button">View Stats</string>
+    <string name="train_button">Training</string>
+    <string name="battle_button">Battle</string>
+    <string name="stats_view">Play the game to view your user stats!</string>
+    <string name="battle_page">COMING SOON!</string>
+    <string name="user_name">Input username</string>
+    <string name="button_submit">Submit</string>
+    <string name="select_workout">Select a Workout: </string>
+    <string name="bench_press">Bench Press</string>
+    <string name="dead_lift">Deadlifts</string>
+    <string name="squats_workout">Squats</string>
+    <string name="pedo_meter">Pedometer</string>
+    <string name="no_bp_data">** No bench press data **</string>
+    <string name="no_squats_data">** No squats data **</string>
+    <string name="no_deadlift_data">** No deadlift data **</string>
+    <string name="add_sets">Add Set</string>
+    <string name="enter_reps">Enter Number of Reps:</string>
+    <string name="reps_hint">* reps</string>
+    <string name="enter_weight">Enter Your Weight:</string>
+    <string name="weight_hint">* weight (lbs)</string>
+    <string name="sava_data">Save</string>
+    <string name="gain_xp">You gained XP!</string>
+</resources>
