@@ -78,6 +78,8 @@ public class TrainingActivity extends AppCompatActivity {
     }
 
     public void openPedometerActivity(){
+        Intent intent = new Intent(this, Pedometer.class);
+        startActivity(intent);
 
     }
 

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Pedometer"></activity>
         <activity
             android:name=".AddSetActivityDL"
             android:label="Add Deadlift Sets"
