@@ -1,9 +1,9 @@
 package WOPackage;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 
-
-public class Exercise {
+public class Exercise implements Serializable{
 
     private String name;
     private ArrayList<WorkoutSet> sets;
