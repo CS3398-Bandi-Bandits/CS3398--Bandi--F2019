@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class Player implements IFightable, Serializable {
 	
-	private Skill strength, defence, hp;
+	private Skill strength, defence, hp, speed;
 	private int combatLevel;
 	private String username;
 	
@@ -19,22 +19,24 @@ public class Player implements IFightable, Serializable {
 		this.strength = new Strength();
 		this.defence = new Defence();
 		this.hp = new Hitpoints();
+		this.speed = new Speed();
 		this.combatLevel = 1;
 	}
 	
 	// constructor for existing players
-	public Player(String name, Skill str, Skill def, Skill hp) {
+	public Player(String name, Skill str, Skill def, Skill hp, Skill speed) {
 		
 		this.username = name;
 		this.strength = str;
 		this.defence = def;
 		this.hp = hp;
+		this.speed = speed;
 		calculateCombatLevel();
 	}
 	
 	private void calculateCombatLevel() {
 		
-		int cb = (this.strength.getLevel() + this.strength.getLevel())/3 + (this.hp.getLevel()/5) - 1;
+		int cb = (this.defence.getLevel()/3 + this.strength.getLevel())/3 + (this.hp.getLevel()/5) - 1;
 		if(!(cb < 1)) {
 			this.combatLevel = cb;
 		}
@@ -64,6 +66,11 @@ public class Player implements IFightable, Serializable {
 	public Skill getHitPointsSkill() {
 		
 		return this.hp;
+	}
+	
+	public Skill getSpeedSkill() {
+		
+		return this.speed;
 	}
 	
 	public void trainSkill(Skill skill, int addedXp) {
