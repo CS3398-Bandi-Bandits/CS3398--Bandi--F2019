@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LoginActivity.preferenceSettings = getPreferences(LoginActivity.PREFERENCE_MODE_PRIVATE);
+        //LoginActivity.preferenceSettings = getPreferences(LoginActivity.PREFERENCE_MODE_PRIVATE);
 
-        String uName = LoginActivity.preferenceSettings.getString("username", "user");
+        //String uName = LoginActivity.preferenceSettings.getString("username", "user");
 
-
+        /*
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
@@ -38,7 +38,22 @@ public class MainActivity extends AppCompatActivity {
 
         // Capture the layout's TextView and set the string as its text
         TextView textView = findViewById(R.id.UsernameText);
-        textView.setText(uName);
+        textView.setText(message);
+         */
+
+        try {
+            Controller.createPlayer("new user");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            beginningPrompt();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
         statsButton = (Button) findViewById(R.id.statsButton);
         statsButton.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +81,32 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void beginningPrompt() throws IOException, ClassNotFoundException {
+
+        boolean exists = Controller.doesDatabaseExist();
+
+        // if the database file exists, go straight to the main page
+        if(exists == true) {
+            Controller.getData();
+            String username = Controller.getPlayer().getUsername();
+            String welcomeBack = "Welcome back, " + username + "!";
+
+            TextView textView = findViewById(R.id.UsernameText);
+            textView.setText(welcomeBack);
+
+            // otherwise, if the file DNE, go to the Login page and create a new user
+        } else {
+            //System.out.println("Please create an account.");
+
+            //String name = getNewUsername();
+
+            openLoginActivity();
+
+        }
+
+        //mainScreen();
+    }
+
     public void openStatsActivity() {
         Intent intent = new Intent(this, StatsActivity.class);
         startActivity(intent);
@@ -78,6 +119,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openBattleActivity() {
         Intent intent = new Intent(this, BattleActivity.class);
+        startActivity(intent);
+    }
+    public void openLoginActivity() {
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 
