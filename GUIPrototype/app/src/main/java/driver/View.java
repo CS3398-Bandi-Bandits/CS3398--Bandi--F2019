@@ -61,7 +61,7 @@ public class View {
 		
 		switch(num) {
 			case 1:
-				showStats();
+				//showStats();
 				break;
 		
 			case 2:
@@ -74,7 +74,7 @@ public class View {
 		}
 	}
 	
-	public static void showStats() throws IOException {
+/*	public static void showStats() throws IOException {
 		
 		HashMap<String, Integer> stats = Controller.playerStats();
 		
@@ -83,7 +83,7 @@ public class View {
                              ": " + entry.getValue());
 		System.out.println();
 		mainScreen();
-	}
+	}*/
 	
 	public static void trainingScreen() throws IOException {
 		

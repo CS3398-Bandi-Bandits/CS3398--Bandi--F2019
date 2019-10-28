@@ -14,18 +14,18 @@ public class Controller {
 	private static final String DATABASE_FILE = "database.dat";
 	
 
-	public static HashMap<String,Integer> playerStats() {
+	public static HashMap<String,String> playerStats() {
 		
 		Skill strength = player.getStrengthSkill();
 		Skill defence = player.getDefenceSkill();
 		Skill hp = player.getHitPointsSkill();
 		
-		int combatLevel = player.getCombatLevel();
-		int strengthLevel = strength.getLevel();
-		int defenceLevel = defence.getLevel();
-		int hpLevel = hp.getLevel();
+		String combatLevel = String.valueOf(player.getCombatLevel());
+		String strengthLevel = String.valueOf(strength.getLevel());
+		String defenceLevel = String.valueOf(defence.getLevel());
+		String hpLevel = String.valueOf(hp.getLevel());
 		
-		HashMap<String, Integer> stats = new HashMap<String, Integer>();
+		HashMap<String, String> stats = new HashMap<String, String>();
 		stats.put(player.getCombatString(), combatLevel);
 		stats.put(strength.toString(), strengthLevel);
 		stats.put(defence.toString(), defenceLevel);
