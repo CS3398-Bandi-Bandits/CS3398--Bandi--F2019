@@ -52,6 +52,14 @@ public class TrainingActivity extends AppCompatActivity {
                 openDeadliftActivity();
             }
         });
+
+        pedometerButton = (Button) findViewById(R.id.pedoButton);
+        pedometerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPedometerActivity();
+            }
+        });
     }
 
     public void openBenchPressActivity() {
@@ -67,6 +75,12 @@ public class TrainingActivity extends AppCompatActivity {
     public void openDeadliftActivity() {
         Intent intent = new Intent(this, DeadliftActivity.class);
         startActivity(intent);
+    }
+
+    public void openPedometerActivity(){
+        Intent intent = new Intent(this, Pedometer.class);
+        startActivity(intent);
+
     }
 
     /*public void trainingData() throws IOException {
