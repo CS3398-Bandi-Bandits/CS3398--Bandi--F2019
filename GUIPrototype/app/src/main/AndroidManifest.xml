@@ -103,7 +103,7 @@
         </activity>
         <activity
             android:name=".StatsActivity"
-            android:label="User Stats"
+            android:label="Player Stats"
             android:parentActivityName=".MainActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->

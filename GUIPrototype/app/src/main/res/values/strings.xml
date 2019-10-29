@@ -4,7 +4,7 @@
     <string name="stats_button">View Stats</string>
     <string name="train_button">Training</string>
     <string name="battle_button">Battle</string>
-    <string name="stats_view">Play the game to view your user stats!</string>
+    <string name="stats_view">Player Stats:</string>
     <string name="battle_page">COMING SOON!</string>
     <string name="user_name">Input username</string>
     <string name="button_submit">Submit</string>

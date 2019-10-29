@@ -29,7 +29,7 @@ public class StatsActivity extends AppCompatActivity {
         userName.setText(Controller.player.getUsername());
 
         stats = (TextView) findViewById(R.id.textViewStats);
-        stats.setText("");
+        stats.append("\n\n");
         HashMap<String, String> statsMap = Controller.playerStats();
 
         for (Map.Entry<String, String> entry : statsMap.entrySet()) {
