@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Button statsButton;
     private Button trainButton;
     private Button battleButton;
-    private Button logoutButton;
+    //private Button logoutButton;
     private TextView textView;
 
     @Override
@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+                /*
                 logoutButton = (Button) findViewById(R.id.logoutButton);
                 logoutButton.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -84,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         openLoginActivity();
                     }
                 });
+                */
 
             /*String username = Controller.getPlayer().getUsername();
             String welcomeBack = "Welcome back, " + username + "!";
