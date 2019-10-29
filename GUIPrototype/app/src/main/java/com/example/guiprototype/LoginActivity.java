@@ -21,13 +21,14 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.*;
 
+import WOPackage.WorkoutLog;
 import driver.*;
 
 public class LoginActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     private Button submitButton;
-    //public String message;
+   // public String message;
     private Intent intent;
     private TextView textView;
     private EditText editText;
@@ -59,9 +60,13 @@ public class LoginActivity extends AppCompatActivity {
                 try {
                     String name = editText.getText().toString();
                     Player player = new Player(name);
+                    WorkoutLog log = new WorkoutLog();
                     Controller.player = player;
+                    Controller.setLog(log);
                     saveUserData(player);
+                    saveUserWOLog(player.getUsername(),Controller.returnLog());
                     Controller.saveData();
+                    Controller.saveWOData(player.getUsername());
 
 
                 } catch(IOException e) {
@@ -99,6 +104,19 @@ public class LoginActivity extends AppCompatActivity {
     }
      */
 
+    public void saveUserWOLog(String name, WorkoutLog l){
+
+        try {
+            FileOutputStream fileStream  = openFileOutput(name+"WO.dat", MODE_PRIVATE);
+            ObjectOutputStream out = new ObjectOutputStream(fileStream);
+            out.writeObject(l);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void saveUserData(Player player) throws IOException {
 

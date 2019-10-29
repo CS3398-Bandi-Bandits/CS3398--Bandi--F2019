@@ -81,13 +81,38 @@ public class Controller {
 
 		out.close();
 		fileStream.close();
+
+
+	}
+
+	public static void saveWOData(String username) throws IOException {
+
+		File file = new File(username +"WO.dat");
+
+		FileOutputStream fileStream = new FileOutputStream(file);
+		ObjectOutputStream out = new ObjectOutputStream(fileStream);
+
+		out.writeObject(log);
+
+		out.close();
+		fileStream.close();
+
+
 	}
 
 	public static void getLog() {
 
 		log = new WorkoutLog();
 	}
-	
+
+	public static void setLog(WorkoutLog l){
+		log = l;
+	}
+
+	public static WorkoutLog returnLog(){
+		return log;
+	}
+
 	public static void getData() throws IOException, ClassNotFoundException {
 		
 		File file = new File(DATABASE_FILE);

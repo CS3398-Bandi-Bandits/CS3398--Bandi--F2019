@@ -3,7 +3,7 @@ package com.example.guiprototype;
 import androidx.appcompat.app.AppCompatActivity;
 
 import driver.*;
-
+import WOPackage.*;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -47,10 +47,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         try {
-            if(Controller.doesDatabaseExist(files)) {
+            if(Controller.doesDatabaseExist(files)&& Controller.returnLog().doesWOLogExist(files,Controller.getPlayer().getUsername())) {
                 //Controller.getData();
 
                 getUserData();
+                getUserWOLog(Controller.getPlayer().getUsername());
+
                 textView.setText(Controller.player.getUsername());
 
                 statsButton = (Button) findViewById(R.id.statsButton);
@@ -173,6 +175,22 @@ public class MainActivity extends AppCompatActivity {
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        }
+    }
+
+    public void getUserWOLog(String username){
+
+        try {
+            FileInputStream fileStream = openFileInput(username + "WO.dat");
+            ObjectInputStream in = new ObjectInputStream(fileStream);
+            Controller.log = (WorkoutLog) in.readObject();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        } catch (ClassNotFoundException cnfe){
+            cnfe.printStackTrace();
         }
     }
 

@@ -1,12 +1,11 @@
 package com.example.guiprototype;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-
+import android.widget.Toast;
 import java.io.IOException;
 
 import WOPackage.WorkoutLog;
@@ -49,9 +48,13 @@ public class AddSetActivityBP extends AppCompatActivity {
 
         String message = "You gained " + xpTotal + " experience in Strength!";
 
-        intent.putExtra(BP_SETS_MESSAGE, message);
+        Toast toast = Toast.makeText(getApplicationContext(),
+                message,
+                Toast.LENGTH_SHORT);
+        toast.show();
+
         /////////
 
-        startActivity(intent);
+        finish();
     }
 }

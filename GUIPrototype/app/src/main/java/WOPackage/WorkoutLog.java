@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.io.*;
 
 public class WorkoutLog implements Serializable{
+
+
     private ArrayList<String> options;
     private ArrayList<Exercise> backLog;
     public Exercise current;
@@ -108,4 +110,17 @@ public class WorkoutLog implements Serializable{
         int i = baseExp + improvementExp;
         return i;
     }
+
+    public boolean doesWOLogExist(String[] files, String name) throws IOException, ClassNotFoundException{
+
+        String filename = name + "WO.dat";
+        for(String file : files) {
+            if (file.equals(filename)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 }

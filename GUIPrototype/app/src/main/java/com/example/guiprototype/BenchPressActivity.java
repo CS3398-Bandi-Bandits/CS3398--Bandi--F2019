@@ -8,10 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.IOException;
-
-import WOPackage.WorkoutLog;
-
 public class BenchPressActivity extends AppCompatActivity {
 
     private Button addSetButton;
@@ -21,6 +17,8 @@ public class BenchPressActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bench_press);
+
+
 
         addSetButton = (Button) findViewById(R.id.addSetButtoninBP);
         addSetButton.setOnClickListener(new View.OnClickListener() {
