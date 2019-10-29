@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Pedometer">
 
+
     <LinearLayout
         android:orientation="vertical"
         android:gravity="center"

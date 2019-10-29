@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     private Button trainButton;
     private Button battleButton;
     private TextView textView;
-    public static final String SHARED_PREFS = "sharedPrefs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

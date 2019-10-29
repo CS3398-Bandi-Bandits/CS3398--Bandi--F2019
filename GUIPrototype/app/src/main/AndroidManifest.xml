@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Pedometer"></activity>
+
+        <activity
+            android:name=".Pedometer"
+            android:label="Pedometer"
+            android:parentActivityName=".TrainingActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".AddSetActivityDL"
             android:label="Add Deadlift Sets"
@@ -105,7 +116,7 @@
             android:label="Login Page" />
         <activity
             android:name=".MainActivity"
-            android:label="Main Page">
+            android:label="Fit Warriors">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
