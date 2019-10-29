@@ -2,6 +2,7 @@ package com.example.guiprototype;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -28,7 +29,7 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
 
     private Button BtnStart;
     private Button BtnStop;
-    private Button View;
+    private Button Save;
 
 
     @Override
@@ -45,18 +46,17 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
         TvSteps = (TextView) findViewById(R.id.tv_steps);
         BtnStart = (Button) findViewById(R.id.btn_start);
         BtnStop = (Button) findViewById(R.id.btn_stop);
+        Save = (Button) findViewById(R.id.viewXP);
 
-        View = (Button) findViewById(R.id.viewXP);
-
-
+        // always listen for steps
+        sensorManager.registerListener(Pedometer.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
 
         BtnStart.setOnClickListener(new android.view.View.OnClickListener(){
 
             @Override
             public void onClick(View arg0) {
-                numSteps = 0;
-                sensorManager.registerListener(Pedometer.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
 
+                sensorManager.registerListener(Pedometer.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
             }
         });
 
@@ -66,11 +66,36 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
             @Override
             public void onClick(View arg0) {
 
+                //numSteps = 20000; // testing
                 sensorManager.unregisterListener(Pedometer.this);
-
             }
         });
 
+        Save.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View arg0) {
+
+                // send data
+                try {
+
+                    Skill skill = Controller.player.getSpeedSkill();
+                    Controller.trainingMode(skill, numSteps);
+                    numSteps = 0;
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                openTrainingActivity();
+            }
+        });
+
+    }
+
+    public void openTrainingActivity() {
+        Intent intent = new Intent(this, TrainingActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -93,14 +118,14 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
 
 
         // testing
-        try {
+/*        try {
 
             Skill skill = Controller.player.getSpeedSkill();
             Controller.trainingMode(skill, numSteps);
 
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
     }
 }
