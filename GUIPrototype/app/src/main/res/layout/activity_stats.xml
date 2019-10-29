@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameText"
-        app:srcCompat="@drawable/player_action_name"
+        app:srcCompat="@drawable/player1trans"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -44,8 +44,8 @@
 
     <TextView
         android:id="@+id/textViewStats"
-        android:layout_width="343dp"
-        android:layout_height="321dp"
+        android:layout_width="0dp"
+        android:layout_height="299dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
