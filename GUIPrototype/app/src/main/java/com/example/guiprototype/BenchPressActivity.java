@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.io.IOException;
 
+import WOPackage.WorkoutLog;
+
 public class BenchPressActivity extends AppCompatActivity {
 
     private Button addSetButton;

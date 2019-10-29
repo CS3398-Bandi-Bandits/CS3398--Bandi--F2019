@@ -35,12 +35,6 @@ public class LoginActivity extends AppCompatActivity {
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String TEXT = "text";
 
-    /*
-    public static SharedPreferences preferenceSettings;
-    private SharedPreferences.Editor preferenceEditor;
-    public static final int PREFERENCE_MODE_PRIVATE = 0;
-     */
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

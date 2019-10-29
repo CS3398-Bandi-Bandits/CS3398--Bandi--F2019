@@ -30,20 +30,12 @@ public class AddSetActivityDL extends AppCompatActivity {
         EditText editRepsText = (EditText) findViewById(R.id.repsEditTextInDL);
         EditText editWeightText = (EditText) findViewById(R.id.weightEditTextInDL);
 
-        //numReps = Integer.parseInt(editRepsText.getText().toString());
-        //myWeight = Double.parseDouble(editWeightText.getText().toString());
-
-/*        String message = "Set: " + editRepsText.getText().toString() +
-                " Reps @ " + editWeightText.getText().toString() + " lbs";
-
-        intent.putExtra(DL_SETS_MESSAGE, message);*/
-
         /////////
         int reps = Integer.parseInt(editRepsText.getText().toString());
         double weight = Double.parseDouble(editWeightText.getText().toString());
 
         log = Controller.log;
-        log.createExercise("squat");
+        log.createExercise("Deadlifts");
 
         log.current.addSet(reps, weight);
         log.logExercise();

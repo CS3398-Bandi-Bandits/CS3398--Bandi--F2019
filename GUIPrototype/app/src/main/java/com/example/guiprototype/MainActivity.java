@@ -95,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // otherwise, if the file DNE, go to the Login page and create a new user
             } else {
-                //System.out.println("Please create an account.");
 
                 //String name = getNewUsername();
 
