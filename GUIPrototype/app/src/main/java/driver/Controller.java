@@ -14,6 +14,7 @@ public class Controller {
 	
 	public static Player player;
 	private static final String DATABASE_FILE = "database.dat";
+	public static WorkoutLog log;
 	
 
 	public static HashMap<String, String> playerStats() {
@@ -44,7 +45,7 @@ public class Controller {
 		Skill hp = player.getHitPointsSkill();
 		player.trainSkill(skill, addedXp);
 		player.trainSkill(hp, addedXp);
-		saveData();
+		//saveData();
 	}
 	
 	public static void battleMode(Player other) {
@@ -81,8 +82,13 @@ public class Controller {
 		out.close();
 		fileStream.close();
 	}
+
+	public static void getLog() {
+
+		log = new WorkoutLog();
+	}
 	
-	public static Player getData() throws IOException, ClassNotFoundException {
+	public static void getData() throws IOException, ClassNotFoundException {
 		
 		File file = new File(DATABASE_FILE);
 			
@@ -93,7 +99,6 @@ public class Controller {
 			
 		in.close();
 		fileStream.close();
-		return player;
 	}
 
 

@@ -8,12 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 import WOPackage.WorkoutLog;
 import driver.Controller;
+import driver.Player;
 import driver.Skill;
 
 public class TrainingActivity extends AppCompatActivity {
@@ -27,6 +31,8 @@ public class TrainingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
+
+        Controller.getLog();
 
         benchPressButton = (Button) findViewById(R.id.benchButton);
         benchPressButton.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +66,13 @@ public class TrainingActivity extends AppCompatActivity {
                 openPedometerActivity();
             }
         });
+
+        try {
+            saveUserData(Controller.player);
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void openBenchPressActivity() {
@@ -81,6 +94,18 @@ public class TrainingActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Pedometer.class);
         startActivity(intent);
 
+    }
+
+    public void saveUserData(Player player) throws IOException {
+
+        try {
+            FileOutputStream fileStream = openFileOutput("database.dat", MODE_PRIVATE);
+            ObjectOutputStream out = new ObjectOutputStream(fileStream);
+            out.writeObject(player);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /*public void trainingData() throws IOException {

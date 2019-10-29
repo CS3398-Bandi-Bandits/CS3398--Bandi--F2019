@@ -6,8 +6,8 @@ import java.io.*;
 public class WorkoutLog implements Serializable{
     private ArrayList<String> options;
     private ArrayList<Exercise> backLog;
-    private Exercise current;
-    private Integer improvementExp,
+    public Exercise current;
+    public Integer improvementExp,
                     baseExp;
 
     public WorkoutLog(){

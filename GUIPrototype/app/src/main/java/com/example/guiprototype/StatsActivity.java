@@ -17,12 +17,16 @@ import driver.Controller;
 public class StatsActivity extends AppCompatActivity {
 
     private TextView stats;
+    private TextView userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
+
+        userName = (TextView) findViewById(R.id.usernameText);
+        userName.setText(Controller.player.getUsername());
 
         stats = (TextView) findViewById(R.id.textViewStats);
         stats.setText("");

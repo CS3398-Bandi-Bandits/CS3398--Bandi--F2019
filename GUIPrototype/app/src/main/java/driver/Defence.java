@@ -7,7 +7,6 @@ package driver;
 public class Defence extends Skill {
 	
 	private int level, xp, goalXp;
-	private String type;
 
 	public Defence() {
 		this.level = super.level;

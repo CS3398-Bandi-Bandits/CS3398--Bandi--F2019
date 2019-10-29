@@ -9,9 +9,14 @@ import android.widget.EditText;
 
 import java.io.IOException;
 
+import WOPackage.WorkoutLog;
+import driver.Controller;
+import driver.Skill;
+
 public class AddSetActivityDL extends AppCompatActivity {
 
     public static final String DL_SETS_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public static WorkoutLog log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +33,34 @@ public class AddSetActivityDL extends AppCompatActivity {
         //numReps = Integer.parseInt(editRepsText.getText().toString());
         //myWeight = Double.parseDouble(editWeightText.getText().toString());
 
-        String message = "Set: " + editRepsText.getText().toString() +
+/*        String message = "Set: " + editRepsText.getText().toString() +
                 " Reps @ " + editWeightText.getText().toString() + " lbs";
 
+        intent.putExtra(DL_SETS_MESSAGE, message);*/
+
+        /////////
+        int reps = Integer.parseInt(editRepsText.getText().toString());
+        double weight = Double.parseDouble(editWeightText.getText().toString());
+
+        log = Controller.log;
+        log.createExercise("squat");
+
+        log.current.addSet(reps, weight);
+        log.logExercise();
+        int xpTotal = log.getTotalExp();
+
+
+        Skill skill = Controller.player.getStrengthSkill();
+        //Skill hp = Controller.player.getHitPointsSkill();
+        //Controller.player.trainSkill(skill, xpTotal);
+        Controller.trainingMode(skill, xpTotal);
+
+        String message = "You gained " + xpTotal + " experience in Strength!";
+
         intent.putExtra(DL_SETS_MESSAGE, message);
+        /////////
+
+
         startActivity(intent);
     }
 }

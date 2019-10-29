@@ -15,6 +15,7 @@ import WOPackage.*;
 public class AddSetActivitySquats extends AppCompatActivity {
 
     public static final String SQUATS_SETS_MESSAGE = "com.example.myfirstapp.MESSAGE";
+    public WorkoutLog log;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,24 +32,31 @@ public class AddSetActivitySquats extends AppCompatActivity {
         //numReps = Integer.parseInt(editRepsText.getText().toString());
         //myWeight = Double.parseDouble(editWeightText.getText().toString());
 
-        String message = "Set: " + editRepsText.getText().toString() +
-                " Reps @ " + editWeightText.getText().toString() + " lbs";
+      //  String message = "Set: " + editRepsText.getText().toString() +
+       //         " Reps @ " + editWeightText.getText().toString() + " lbs";
 
-        intent.putExtra(SQUATS_SETS_MESSAGE, message);
+        //intent.putExtra(SQUATS_SETS_MESSAGE, message);
+
 
         /////////
-/*        WorkoutLog log = new WorkoutLog();
         int reps = Integer.parseInt(editRepsText.getText().toString());
         double weight = Double.parseDouble(editWeightText.getText().toString());
+
+        log = Controller.log;
+        log.createExercise("squat");
+
         log.current.addSet(reps, weight);
-
         log.logExercise();
-        int xpTotal = log.baseExp + log.improvementExp;
+        int xpTotal = log.getTotalExp();
 
 
-        Skill skill = Controller.player.defence;
-        Controller.player.trainSkill(skill, xpTotal);
-        /////////*/
+        Skill skill = Controller.player.getDefenceSkill();
+        Controller.trainingMode(skill, xpTotal);
+
+        String message = "You gained " + xpTotal + " experience in Defence!";
+
+        intent.putExtra(SQUATS_SETS_MESSAGE, message);
+        /////////
 
         startActivity(intent);
     }
