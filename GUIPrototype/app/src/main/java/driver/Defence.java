@@ -6,12 +6,13 @@ package driver;
 
 public class Defence extends Skill {
 	
-	int level, xp, goalXp;
+	private int level, xp, goalXp;
+	private String type;
 
 	public Defence() {
 		this.level = super.level;
 		this.xp = super.xp;
-		this.goalXp = super.goalXp;	
+		this.goalXp = super.goalXp;
 	}
 
 	@Override

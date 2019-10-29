@@ -1,5 +1,7 @@
 package driver;
 
+import android.app.Activity;
+
 import java.io.*;
 import java.util.*;
 import WOPackage.*;
@@ -10,28 +12,31 @@ import WOPackage.*;
 
 public class Controller {
 	
-	private static Player player;
+	public static Player player;
 	private static final String DATABASE_FILE = "database.dat";
 	
 
-	public static HashMap<String,Integer> playerStats() {
-		
-		Skill strength = player.getStrengthSkill();
-		Skill defence = player.getDefenceSkill();
-		Skill hp = player.getHitPointsSkill();
-		
-		int combatLevel = player.getCombatLevel();
-		int strengthLevel = strength.getLevel();
-		int defenceLevel = defence.getLevel();
-		int hpLevel = hp.getLevel();
-		
-		HashMap<String, Integer> stats = new HashMap<String, Integer>();
-		stats.put(player.getCombatString(), combatLevel);
-		stats.put(strength.toString(), strengthLevel);
-		stats.put(defence.toString(), defenceLevel);
-		stats.put(hp.toString(), hpLevel);
-		
-		return stats;
+	public static HashMap<String, String> playerStats() {
+
+        Skill strength = player.getStrengthSkill();
+        Skill defence = player.getDefenceSkill();
+        Skill hp = player.getHitPointsSkill();
+        Skill speed = player.getSpeedSkill();
+
+        String combatLevel = String.valueOf(player.getCombatLevel());
+        String strengthLevel = String.valueOf(strength.getLevel());
+        String defenceLevel = String.valueOf(defence.getLevel());
+        String hpLevel = String.valueOf(hp.getLevel());
+        String speedLevel = String.valueOf(speed.getLevel());
+
+        HashMap<String, String> stats = new HashMap<String, String>();
+        stats.put(player.getCombatString(), combatLevel);
+        stats.put(strength.toString(), strengthLevel);
+        stats.put(defence.toString(), defenceLevel);
+        stats.put(speed.toString(), speedLevel);
+        stats.put(hp.toString(), hpLevel);
+
+        return stats;
 	}
 	
 	public static void trainingMode(Skill skill, int addedXp) throws IOException {
@@ -48,31 +53,36 @@ public class Controller {
 		
 	}
 	
-	public static void createPlayer(String name) throws IOException {
+	public static Player createPlayer(String name) throws ClassNotFoundException, IOException{
 		
 		player = new Player(name);
-		saveData();
+		return player;
 	}
 	
-	public static Player getPlayer() {
-		
+	public static Player getPlayer() throws ClassNotFoundException, IOException{
+
+		getData();
 		return player;
+	}
+
+	public static void setPlayer(Player p) {
+		player = p;
 	}
 	
 	public static void saveData() throws IOException {
 		
 		File file = new File(DATABASE_FILE);
-		
+
 		FileOutputStream fileStream = new FileOutputStream(file);
 		ObjectOutputStream out = new ObjectOutputStream(fileStream);
-		
+
 		out.writeObject(player);
-		
+
 		out.close();
 		fileStream.close();
 	}
 	
-	public static void getData() throws IOException, ClassNotFoundException {
+	public static Player getData() throws IOException, ClassNotFoundException {
 		
 		File file = new File(DATABASE_FILE);
 			
@@ -83,16 +93,19 @@ public class Controller {
 			
 		in.close();
 		fileStream.close();
+		return player;
 	}
+
+
+
 	
-	public static boolean doesDatabaseExist() {
-		
-		File file = new File(DATABASE_FILE);
-		
-		if(file.exists()) {
-			return true;
-		} else {
-			return false;
+	public static boolean doesDatabaseExist(String[] files) throws IOException, ClassNotFoundException{
+
+		for(String file : files) {
+			if (file.equals(DATABASE_FILE)) {
+				return true;
+			}
 		}
+		return false;
 	}
 }

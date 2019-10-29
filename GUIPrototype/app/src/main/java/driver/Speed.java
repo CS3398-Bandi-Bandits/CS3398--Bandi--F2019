@@ -6,7 +6,8 @@ package driver;
 
 public class Speed extends Skill {
 
-    int level, xp, goalXp;
+    private int level, xp, goalXp;
+    private String type;
 
     public Speed() {
         this.level = super.level;

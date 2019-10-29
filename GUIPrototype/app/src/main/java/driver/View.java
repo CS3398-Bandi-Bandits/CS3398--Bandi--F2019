@@ -16,7 +16,7 @@ public class View {
 
 	public static void beginningPrompt() throws IOException, ClassNotFoundException {
 		
-		boolean exists = Controller.doesDatabaseExist();
+	/*	boolean exists = Controller.doesDatabaseExist();
 		
 		// if account exists, go straight to the main page
 		if(exists == true) {
@@ -32,7 +32,7 @@ public class View {
 			Controller.createPlayer(name);
 		}
 		
-		mainScreen();
+		mainScreen();*/
 	}
 	
 	private static String getNewUsername() {
@@ -47,7 +47,7 @@ public class View {
 		return name;
 	}
 	
-	public static void mainScreen() throws IOException {
+	public static void mainScreen() throws IOException, ClassNotFoundException {
 		
 		System.out.println("1. View Stats");
 		System.out.println("2. Train Skill");
@@ -61,7 +61,7 @@ public class View {
 		
 		switch(num) {
 			case 1:
-				showStats();
+				//showStats();
 				break;
 		
 			case 2:
@@ -74,7 +74,7 @@ public class View {
 		}
 	}
 	
-	public static void showStats() throws IOException {
+	/*public static void showStats() throws IOException {
 		
 		HashMap<String, Integer> stats = Controller.playerStats();
 		
@@ -83,9 +83,9 @@ public class View {
                              ": " + entry.getValue());
 		System.out.println();
 		mainScreen();
-	}
+	}*/
 	
-	public static void trainingScreen() throws IOException {
+	public static void trainingScreen() throws IOException, ClassNotFoundException {
 		
 		Skill skill;
 		WorkoutLog log = new WorkoutLog();

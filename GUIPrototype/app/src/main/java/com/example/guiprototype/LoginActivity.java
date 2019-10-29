@@ -12,6 +12,17 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.gson.*;
+import com.google.gson.typeadapters.RuntimeTypeAdapterFactory;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.*;
+
+import driver.*;
+
 public class LoginActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
@@ -20,14 +31,9 @@ public class LoginActivity extends AppCompatActivity {
     private Intent intent;
     private TextView textView;
     private EditText editText;
-    private Switch switch1;
 
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String TEXT = "text";
-    public static final String SWITCH1 = "switch1";
-
-    private String text;
-    private Boolean switchOnOff;
 
     /*
     public static SharedPreferences preferenceSettings;
@@ -45,7 +51,6 @@ public class LoginActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.UsernameText);
         editText = (EditText) findViewById(R.id.edit_username_text);
         submitButton = (Button) findViewById(R.id.submitButton);
-        switch1 = (Switch) findViewById(R.id.switchy);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,14 +60,26 @@ public class LoginActivity extends AppCompatActivity {
                 intent.putExtra(EXTRA_MESSAGE, message);
                 startActivity(intent);
                  */
-                textView.setText(editText.getText().toString());
-                saveUsernameData();
+//                textView.setText("user");
+
+                try {
+                    String name = editText.getText().toString();
+                    Player player = new Player(name);
+                    Controller.player = player;
+                    saveUserData(player);
+                    Controller.saveData();
+
+
+                } catch(IOException e) {
+                    e.printStackTrace();
+                }
+                /*catch(ClassNotFoundException c) {
+                    c.printStackTrace();
+                }*/
                 openMainActivity();
             }
-        });
 
-        loadUsernameData();
-        updateViews();
+        });
     }
 
 
@@ -89,28 +106,46 @@ public class LoginActivity extends AppCompatActivity {
      */
 
 
-    public void saveUsernameData() {
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
+    public void saveUserData(Player player) throws IOException {
+
+        try {
+            FileOutputStream fileStream  = openFileOutput("database.dat", MODE_PRIVATE);
+            ObjectOutputStream out = new ObjectOutputStream(fileStream);
+            out.writeObject(player);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+
+        /*SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putString(TEXT, textView.getText().toString());
-        editor.putBoolean(SWITCH1, switch1.isChecked());
+        ArrayList<Skill> skills = new ArrayList<Skill>();
+        skills.add(player.getStrengthSkill());
+        skills.add(player.getDefenceSkill());
+        skills.add(player.getSpeedSkill());
+        skills.add(player.getHitPointsSkill());
 
-        editor.apply();
+        RuntimeTypeAdapterFactory<Skill> runtimeTypeAdapterFactory = RuntimeTypeAdapterFactory
+                .of(Skill.class, "type")
+                .registerSubtype(Defence.class, "defence")
+                .registerSubtype(Strength.class, "strength")
+                .registerSubtype(Hitpoints.class, "hitpoints")
+                .registerSubtype(Speed.class, "speed");
 
-        Toast.makeText(this, "Data saved", Toast.LENGTH_LONG).show();
+        Gson gson = new GsonBuilder().registerTypeAdapterFactory(runtimeTypeAdapterFactory).create();
+
+        //Gson gson = new Gson();
+        String json = gson.toJson(skills);
+        editor.putString("MyObject", json);
+        editor.commit();
+
+        Toast.makeText(this, "Data saved", Toast.LENGTH_LONG).show();*/
     }
 
-    public void loadUsernameData() {
-        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
-        text = sharedPreferences.getString(TEXT, "");
-        switchOnOff = sharedPreferences.getBoolean(SWITCH1, false);
-    }
 
-    public void updateViews() {
-        textView.setText(text);
-        switch1.setChecked(switchOnOff);
-    }
 
     public void openMainActivity() {
         Intent intent = new Intent(this, MainActivity.class);

@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import driver.*;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,20 +14,105 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Map;
+
+import static driver.Controller.doesDatabaseExist;
 
 public class MainActivity extends AppCompatActivity {
 
     private Button statsButton;
     private Button trainButton;
     private Button battleButton;
+    private TextView textView;
+    public static final String SHARED_PREFS = "sharedPrefs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        textView = (TextView) findViewById(R.id.UsernameText);
+        String[] files = fileList();
+
+
+        try {
+            if(Controller.doesDatabaseExist(files)) {
+                //Controller.getData();
+
+                getUserData();
+                textView.setText(Controller.player.getUsername());
+
+                statsButton = (Button) findViewById(R.id.statsButton);
+                statsButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openStatsActivity();
+                    }
+                });
+
+                trainButton = (Button) findViewById(R.id.trainButton);
+                trainButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openTrainingActivity();
+                    }
+                });
+
+                battleButton = (Button) findViewById(R.id.battleButton);
+                battleButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openBattleActivity();
+                    }
+                });
+
+            /*String username = Controller.getPlayer().getUsername();
+            String welcomeBack = "Welcome back, " + username + "!";
+
+            TextView textView = findViewById(R.id.UsernameText);
+            textView.setText(welcomeBack);*/
+
+            /*Gson gson = new Gson();
+            String json = sharedPreferences.getString("MyObject", "");
+            Player player = gson.fromJson(json, Player.class);
+
+
+            String username = Controller.getPlayer().getUsername();
+            String welcomeBack = "Welcome back, " + username + "!";
+
+            TextView textView = findViewById(R.id.UsernameText);
+            textView.setText(welcomeBack);*/
+
+                // otherwise, if the file DNE, go to the Login page and create a new user
+            } else {
+                //System.out.println("Please create an account.");
+
+                //String name = getNewUsername();
+
+                openLoginActivity();
+                //Controller.saveData();
+
+            }
+        } catch(IOException e) {
+           // e.getStackTrace();
+            //System.exit(0);
+        } catch(ClassNotFoundException c) {
+           // c.getStackTrace();
+           //System.exit(0);
+        }
+
+
 
         //LoginActivity.preferenceSettings = getPreferences(LoginActivity.PREFERENCE_MODE_PRIVATE);
 
@@ -41,71 +129,11 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(message);
          */
 
-        try {
-            Controller.createPlayer("new user");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        try {
-            beginningPrompt();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        statsButton = (Button) findViewById(R.id.statsButton);
-        statsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openStatsActivity();
-            }
-        });
-
-        trainButton = (Button) findViewById(R.id.trainButton);
-        trainButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openTrainingActivity();
-            }
-        });
-
-        battleButton = (Button) findViewById(R.id.battleButton);
-        battleButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openBattleActivity();
-            }
-        });
 
     }
 
-    public void beginningPrompt() throws IOException, ClassNotFoundException {
 
-        boolean exists = Controller.doesDatabaseExist();
 
-        // if the database file exists, go straight to the main page
-        if(exists == true) {
-            Controller.getData();
-            String username = Controller.getPlayer().getUsername();
-            String welcomeBack = "Welcome back, " + username + "!";
-
-            TextView textView = findViewById(R.id.UsernameText);
-            textView.setText(welcomeBack);
-
-            // otherwise, if the file DNE, go to the Login page and create a new user
-        } else {
-            //System.out.println("Please create an account.");
-
-            //String name = getNewUsername();
-
-            openLoginActivity();
-
-        }
-
-        //mainScreen();
-    }
 
     public void openStatsActivity() {
         Intent intent = new Intent(this, StatsActivity.class);
@@ -125,6 +153,22 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
+
+
+    public void getUserData() throws IOException, ClassNotFoundException {
+
+       Player player;
+        try {
+            FileInputStream fileStream = openFileInput("database.dat");
+            ObjectInputStream in = new ObjectInputStream(fileStream);
+            player = (Player) in.readObject();
+            Controller.player = player;
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
 
     /*public void sendStatsMessage(View view) throws IOException {
         Intent intent = new Intent(this, StatsActivity.class);

@@ -101,11 +101,11 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="Main Page" />
-        <activity
             android:name=".LoginActivity"
-            android:label="Login">
+            android:label="Login Page" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Main Page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -114,7 +114,7 @@
         </activity>
         <activity
             android:name=".StartActivity"
-            android:label="Start Page" />
+            android:label="Start" />
     </application>
 
 </manifest>

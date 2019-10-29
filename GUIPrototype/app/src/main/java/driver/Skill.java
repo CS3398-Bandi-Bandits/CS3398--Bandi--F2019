@@ -5,31 +5,26 @@ import java.io.Serializable;
  * 	@author Devon Tyson
  */
 
-public abstract class Skill implements ITrainable, Serializable {
+public class Skill implements ITrainable, Serializable {
 	
 	private static final int MAX_LEVEL = 99;
 	protected int level;
 	protected int xp;
 	protected int goalXp;
+	protected String type;
 
-	// constructor for new players
+
+	// default contructor
 	public Skill() {
-		
+
 		this.level = 1;
 		this.xp = 0;
 		this.goalXp = 3000;
 	}
-	
-	// constructor for existing players
-	public Skill(int level, int xp) {
-		
-		this.level = level;
-		this.xp = xp;
-		calculateGoalXp();
-	}
-	
+
+
 	public int getLevel() {
-		
+
 		return this.level;
 	}
 
