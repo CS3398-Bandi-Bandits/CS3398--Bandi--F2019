@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Fit Warriors</string>
     <string name="edit_username">user</string>
+    <string name="button_logout">Log out</string>
     <string name="stats_button">View Stats</string>
     <string name="train_button">Training</string>
     <string name="battle_button">Battle</string>

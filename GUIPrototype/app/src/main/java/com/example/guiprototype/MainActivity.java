@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private Button statsButton;
     private Button trainButton;
     private Button battleButton;
+    private Button logoutButton;
     private TextView textView;
 
     @Override
@@ -73,6 +74,14 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         openBattleActivity();
+                    }
+                });
+
+                logoutButton = (Button) findViewById(R.id.logoutButton);
+                logoutButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        openLoginActivity();
                     }
                 });
 
