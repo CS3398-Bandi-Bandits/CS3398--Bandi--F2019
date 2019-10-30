@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 /**
  * 	@author Devon Tyson
+ *
  */
 
 public class Player implements IFightable, Serializable {

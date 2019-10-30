@@ -8,6 +8,7 @@ import WOPackage.*;
 
 /**
  * 	@author Devon Tyson
+ * 	extended by Jose Herrera
  */
 
 public class Controller {
@@ -88,27 +89,19 @@ public class Controller {
 	public static void exportStats(){
 		File file = new File("Stats.txt");
 
-        FileOutputStream fileStream = null;
-        try {
-            fileStream = new FileOutputStream(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        try{
+            FileWriter writer = new FileWriter(file);
+            writer.write(player.getUsername());
+            writer.write(player.getCombatLevel()+", ");
+            writer.write(player.getStrengthSkill().getLevel()+", ");
+            writer.write(player.getDefenceSkill().getLevel()+", ");
+            writer.write(player.getHitPointsSkill().getLevel()+", ");
+            writer.write(player.getSpeedSkill().getLevel()+", ");
+            writer.close();
+        } catch(IOException ioe){
+            ioe.printStackTrace();
         }
-        try {
-            ObjectOutputStream out;
-            out = new ObjectOutputStream(fileStream);
 
-            out.writeObject(player);
-
-            out.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            fileStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 	public static void saveWOData(String username) throws IOException {
 
