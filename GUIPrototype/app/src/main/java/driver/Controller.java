@@ -85,6 +85,31 @@ public class Controller {
 
 	}
 
+	public static void exportStats(){
+		File file = new File("Stats.txt");
+
+        FileOutputStream fileStream = null;
+        try {
+            fileStream = new FileOutputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try {
+            ObjectOutputStream out;
+            out = new ObjectOutputStream(fileStream);
+
+            out.writeObject(player);
+
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            fileStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 	public static void saveWOData(String username) throws IOException {
 
 		File file = new File(username +"WO.dat");
