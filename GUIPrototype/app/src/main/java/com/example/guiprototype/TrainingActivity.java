@@ -22,6 +22,7 @@ import driver.Skill;
 
 public class TrainingActivity extends AppCompatActivity {
 
+    public static final String EXERCISE_EXTRA = "com.example.guiPrototype.exerciseName";
     private Button benchPressButton;
     private Button squatsButton;
     private Button deadliftButton;
@@ -32,7 +33,8 @@ public class TrainingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_training);
 
-        Controller.getLog();
+       // Controller.createLog();
+/*
 
         benchPressButton = (Button) findViewById(R.id.benchButton);
         benchPressButton.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +61,8 @@ public class TrainingActivity extends AppCompatActivity {
             }
         });
 
+      */
+
         pedometerButton = (Button) findViewById(R.id.pedoButton);
         pedometerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +71,8 @@ public class TrainingActivity extends AppCompatActivity {
             }
         });
 
+
+//// ********** TRIES TO SAVE IT HERE!!!!!!
         try {
             saveUserData(Controller.player);
         } catch(IOException e) {
@@ -94,6 +100,14 @@ public class TrainingActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Pedometer.class);
         startActivity(intent);
 
+    }
+
+    public void openExerciseActivity(View view){
+        Intent intent = new Intent(this, ExerciseActivity.class);
+        TextView textView = (TextView)view;
+        String exerciseName = textView.getText().toString();
+        intent.putExtra(EXERCISE_EXTRA, exerciseName);
+        startActivity(intent);
     }
 
     public void saveUserData(Player player) throws IOException {

@@ -172,8 +172,10 @@ public class MainActivity extends AppCompatActivity {
         try {
             FileInputStream fileStream = openFileInput("database.dat");
             ObjectInputStream in = new ObjectInputStream(fileStream);
-            player = (Player) in.readObject();
+            player = (driver.Player)in.readObject();
             Controller.player = player;
+            fileStream.close();
+            in.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

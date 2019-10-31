@@ -146,10 +146,4 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(this, "Data saved", Toast.LENGTH_LONG).show();*/
     }
 
-
-
-    public void openMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
 }

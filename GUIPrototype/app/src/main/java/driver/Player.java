@@ -1,20 +1,22 @@
 package driver;
 import java.io.Serializable;
 import java.util.HashMap;
-
+import WOPackage.*;
 /**
  * 	@author Devon Tyson
  */
 
 public class Player implements IFightable, Serializable {
-	
+
 	private Skill strength, defence, hp, speed;
 	private int combatLevel;
 	private String username;
+	private WorkoutLog log;
 	
 	// constructor for new players
 	public Player(String name) {
-		
+
+		this.log = new WorkoutLog();
 		this.username = name;
 		this.strength = new Strength();
 		this.defence = new Defence();
@@ -25,7 +27,7 @@ public class Player implements IFightable, Serializable {
 	
 	// constructor for existing players
 	public Player(String name, Skill str, Skill def, Skill hp, Skill speed) {
-		
+
 		this.username = name;
 		this.strength = str;
 		this.defence = def;
@@ -77,7 +79,15 @@ public class Player implements IFightable, Serializable {
 		
 		skill.train(addedXp);
 	}
-	
+
+	public WorkoutLog getLog() {
+		return log;
+	}
+
+	public void setLog(WorkoutLog log) {
+		this.log = log;
+	}
+
 	public String getCombatString() {
 		return "Combat";
 	}

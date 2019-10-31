@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".AddSetActivity"></activity>
+        <activity android:name=".ExerciseActivity" />
         <activity
             android:name=".Pedometer"
             android:label="Pedometer"
@@ -20,7 +21,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".AddSetActivityDL"
             android:label="Add Deadlift Sets"
