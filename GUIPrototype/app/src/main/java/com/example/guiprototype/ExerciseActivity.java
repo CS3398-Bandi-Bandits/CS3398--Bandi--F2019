@@ -61,29 +61,35 @@ public class ExerciseActivity extends AppCompatActivity {
 
     public void saveExercise(View view){
         try{
-            Controller.player.getLog().setCurrent(currentEx);
-            Controller.player.getLog().logExercise();
-            int xpTotal = Controller.player.getLog().getTotalExp();
-            switch (exerciseName){
-                case BENCH_PRESS:
-                    String message = "You gained " + xpTotal + " experience in Strength!";
-                    Skill skill = Controller.player.getStrengthSkill();
-                    Controller.trainingMode(skill, xpTotal);
-                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-                    break;
-                case DEADLIFT:
-                    message = "You gained " + xpTotal + " experience in Strength!";
-                    Skill dlSkill = Controller.player.getStrengthSkill();
-                    //Skill hp = Controller.player.getHitPointsSkill();
-                    //Controller.player.trainSkill(skill, xpTotal);
-                    Controller.trainingMode(dlSkill, xpTotal);
-                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-                default:
-                    message = "You gained " + xpTotal + " experience in Defense!";
-                    Skill defSkill = Controller.player.getDefenceSkill();
-                    Controller.trainingMode(defSkill, xpTotal);
-                    Toast.makeText(getApplicationContext(),message,Toast.LENGTH_LONG).show();
-                    break;
+            if (currentEx.getSets().isEmpty()){
+                Exercise oldExercise = Controller.player.getLog().getMatch(currentEx.getName());
+                publishSets(oldExercise);
+            }
+            else{
+                Controller.player.getLog().setCurrent(currentEx);
+                Controller.player.getLog().logExercise();
+                int xpTotal = Controller.player.getLog().getTotalExp();
+                switch (exerciseName) {
+                    case BENCH_PRESS:
+                        String message = "You gained " + xpTotal + " experience in Strength!";
+                        Skill skill = Controller.player.getStrengthSkill();
+                        Controller.trainingMode(skill, xpTotal);
+                        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                        break;
+                    case DEADLIFT:
+                        message = "You gained " + xpTotal + " experience in Strength!";
+                        Skill dlSkill = Controller.player.getStrengthSkill();
+                        //Skill hp = Controller.player.getHitPointsSkill();
+                        //Controller.player.trainSkill(skill, xpTotal);
+                        Controller.trainingMode(dlSkill, xpTotal);
+                        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                    default:
+                        message = "You gained " + xpTotal + " experience in Defense!";
+                        Skill defSkill = Controller.player.getDefenceSkill();
+                        Controller.trainingMode(defSkill, xpTotal);
+                        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+                        break;
+                }
             }
 
             saveUserData(Controller.player);

@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Fit Warriors</string>
     <string name="edit_username">user</string>
-    <string name="button_logout">Log out</string>
     <string name="stats_button">View Stats</string>
     <string name="train_button">Training</string>
     <string name="battle_button">Battle</string>
@@ -24,7 +23,6 @@
     <string name="enter_weight">Enter Weight Lifted:</string>
     <string name="weight_hint">* weight (lbs)</string>
     <string name="sava_data">Save</string>
-    <string name="gain_xp">You gained XP!</string>
     <string name="deadlift">Deadlift</string>
     <string name="bench_press">Bench Press</string>
     <string name="barbell_row">Barbell Row</string>
