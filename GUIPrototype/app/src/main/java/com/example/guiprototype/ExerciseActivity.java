@@ -88,7 +88,7 @@ public class ExerciseActivity extends AppCompatActivity {
                         Skill defSkill = Controller.player.getDefenceSkill();
                         Controller.trainingMode(defSkill, xpTotal);
                         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-                        break;
+                    break;
                 }
             }
 
