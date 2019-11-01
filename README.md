@@ -59,6 +59,10 @@ steps it takes to get to my class.<br><br>
 Completed By Kenneth Omo<br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
+<br><br>
+Sprint 2<br>
+Completed by Kenneth Omo
+Integrated Pedometer to the GUIPrototype. Source code can be found under GUIProtoype.
 
 
 
