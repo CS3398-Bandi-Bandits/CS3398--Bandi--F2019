@@ -39,7 +39,8 @@ Android Phone <br>
  
 <b>Support for Multiple Workout</b>
  I, Kenny, as a person who goes to the gym, want an app that supports multiple workouts.<br>
- Completed by Jose Herrera.  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.  MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.  TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize objects and level up with the AddSetActivity class.<br>
+ <br>
+ Completed by Jose Herrera.  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.    MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.    TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize  objects and level up with the AddSetActivity class.<br>
  My code is found in CS3398--Bandi--F2019/GUIPrototype/app/src/main/.  I have edited both XML and Java files.
   
 <b>Real Life Levelling:</b> <br>
