@@ -67,7 +67,7 @@ Integrated Pedometer to the GUIPrototype. Source code can be found under GUIProt
 <b>Fully Connected GUI: </b><BR>
 The GUI will sit on top of the backend and allow users to navigate the app seamlessly.<BR>
 I, Jose, as a user who enjoys simplicity, want a single contained app where I don't have to keep track of multiple applications.
-<BR><BR>
+<BR>
  
  Completed by Devon Tyson<BR>
  Integrated the back end driver into the Login, View Stats and Training Mode screens. My code was written into GUI java and XML files, with a few modifications in the driver back end. Logic was reworked to fit into the Android application. Modifications can be found throughout the application GUI.
