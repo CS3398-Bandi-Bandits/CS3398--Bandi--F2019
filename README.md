@@ -61,7 +61,7 @@ Source code is under Pedometer folder on GitHub and can be accessed by Andriod S
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
 <br><br>
 Sprint 2<br>
-Completed by Kenneth Omo
+Completed by Kenneth Omo<br>
 Integrated Pedometer to the GUIPrototype. Source code can be found under GUIProtoype.
 
 
