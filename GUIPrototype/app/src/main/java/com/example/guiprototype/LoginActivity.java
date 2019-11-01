@@ -49,6 +49,13 @@ public class LoginActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String username = editText.getText().toString();
+                Intent intent = new Intent();
+                intent.putExtra(EXTRA_MESSAGE, username);
+                setResult(RESULT_OK, intent);
+                finish();
+
                 /*message = sendMessage();
 
                 intent.putExtra(EXTRA_MESSAGE, message);
@@ -56,8 +63,8 @@ public class LoginActivity extends AppCompatActivity {
                  */
 //                textView.setText("user");
 
-                try {
-                    String name = editText.getText().toString();
+                /*try {
+             *********       String name = editText.getText().toString();
                     Player player = new Player(name);
                     Controller.player = player;
                     saveUserData(player);
@@ -67,10 +74,10 @@ public class LoginActivity extends AppCompatActivity {
                 } catch(IOException e) {
                     e.printStackTrace();
                 }
-                /*catch(ClassNotFoundException c) {
+                *//*catch(ClassNotFoundException c) {
                     c.printStackTrace();
-                }*/
-                openMainActivity();
+                }*//*
+                openMainActivity();*/
             }
 
         });
@@ -139,10 +146,4 @@ public class LoginActivity extends AppCompatActivity {
         Toast.makeText(this, "Data saved", Toast.LENGTH_LONG).show();*/
     }
 
-
-
-    public void openMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
 }

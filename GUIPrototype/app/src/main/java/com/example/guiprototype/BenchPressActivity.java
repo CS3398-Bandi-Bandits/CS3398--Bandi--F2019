@@ -8,10 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.IOException;
-
-import WOPackage.WorkoutLog;
-
 public class BenchPressActivity extends AppCompatActivity {
 
     private Button addSetButton;
@@ -22,7 +18,7 @@ public class BenchPressActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bench_press);
 
-        addSetButton = (Button) findViewById(R.id.addSetButtoninBP);
+        addSetButton = (Button) findViewById(R.id.addSetButton);
         addSetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +26,7 @@ public class BenchPressActivity extends AppCompatActivity {
             }
         });
 
-        saveButton = (Button) findViewById(R.id.saveButtonInBP);
+        saveButton = (Button) findViewById(R.id.saveExerciseButton);
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,7 +39,7 @@ public class BenchPressActivity extends AppCompatActivity {
         String message = intent.getStringExtra(AddSetActivityBP.BP_SETS_MESSAGE);
 
         // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.benchDataTextView);
+        TextView textView = findViewById(R.id.exerciseDataTextView);
         textView.setText(message);
     }
 

@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Fit Warriors</string>
     <string name="edit_username">user</string>
-    <string name="button_logout">Log out</string>
     <string name="stats_button">View Stats</string>
     <string name="train_button">Training</string>
     <string name="battle_button">Battle</string>
@@ -12,7 +11,6 @@
     <string name="user_name">Input username</string>
     <string name="button_submit">Submit</string>
     <string name="select_workout">Select a Workout: </string>
-    <string name="bench_press">Bench Press</string>
     <string name="dead_lift">Deadlifts</string>
     <string name="squats_workout">Squats</string>
     <string name="pedo_meter">Pedometer</string>
@@ -22,8 +20,13 @@
     <string name="add_sets">Add Set</string>
     <string name="enter_reps">Enter Number of Reps:</string>
     <string name="reps_hint">* reps</string>
-    <string name="enter_weight">Enter Your Weight:</string>
+    <string name="enter_weight">Enter Weight Lifted:</string>
     <string name="weight_hint">* weight (lbs)</string>
     <string name="sava_data">Save</string>
-    <string name="gain_xp">You gained XP!</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="bench_press">Bench Press</string>
+    <string name="barbell_row">Barbell Row</string>
+    <string name="cable_fly">Cable Fly</string>
+    <string name="over_head_press">Over-Head Press</string>
+    <string name="hammer_curl">Hammer Curl</string>
 </resources>

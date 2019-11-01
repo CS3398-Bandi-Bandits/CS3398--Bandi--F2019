@@ -79,6 +79,22 @@ public class WorkoutLog implements Serializable{
         return exp;
     }
 
+    public Exercise getMatch(String name){
+
+        Exercise e = new Exercise(name);
+        for (int i = 0; i < backLog.size() ; i++) {
+            if (backLog.get(i).getName().equals(name))
+            {e = backLog.get(i);}
+        }
+
+        return e;
+
+    }
+
+    public void setCurrent(Exercise current) {
+        this.current = current;
+    }
+
     public Integer getImprovementExp() {
         return improvementExp;
     }

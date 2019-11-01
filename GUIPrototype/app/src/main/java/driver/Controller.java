@@ -15,7 +15,8 @@ public class Controller {
 	public static Player player;
 	private static final String DATABASE_FILE = "database.dat";
 	public static WorkoutLog log;
-	
+
+
 
 	public static HashMap<String, String> playerStats() {
 
@@ -83,7 +84,7 @@ public class Controller {
 		fileStream.close();
 	}
 
-	public static void getLog() {
+	public static void createLog() {
 
 		log = new WorkoutLog();
 	}

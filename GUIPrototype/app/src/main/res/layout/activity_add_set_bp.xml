@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/repsEditText" />
 
     <Button
-        android:id="@+id/saveButtonInBPSet"
+        android:id="@+id/saveSetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -71,7 +71,6 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginBottom="64dp"
-        android:onClick="sendRepsMessage"
         android:text="@string/sava_data"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +111,7 @@
         android:inputType="numberDecimal"
         android:textColor="#838383"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/saveButtonInBPSet"
+        app:layout_constraintBottom_toTopOf="@+id/saveSetButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

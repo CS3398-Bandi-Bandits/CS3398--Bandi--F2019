@@ -27,9 +27,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static driver.Controller.doesDatabaseExist;
+import static driver.Controller.player;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final int LOGIN_REQUEST = 1;
     private Button statsButton;
     private Button trainButton;
     private Button battleButton;
@@ -47,35 +49,68 @@ public class MainActivity extends AppCompatActivity {
 
 
         try {
-            if(Controller.doesDatabaseExist(files)) {
-                //Controller.getData();
+            if(!Controller.doesDatabaseExist(files)){
+                openLoginActivity();
+            }
+            else {
+                run();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
-                getUserData();
-                textView.setText(Controller.player.getUsername());
 
-                statsButton = (Button) findViewById(R.id.statsButton);
-                statsButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        openStatsActivity();
-                    }
-                });
+        //LoginActivity.preferenceSettings = getPreferences(LoginActivity.PREFERENCE_MODE_PRIVATE);
 
-                trainButton = (Button) findViewById(R.id.trainButton);
-                trainButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        openTrainingActivity();
-                    }
-                });
+        //String uName = LoginActivity.preferenceSettings.getString("username", "user");
 
-                battleButton = (Button) findViewById(R.id.battleButton);
-                battleButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        openBattleActivity();
-                    }
-                });
+        /*
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+        String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
+
+
+        // Capture the layout's TextView and set the string as its text
+        TextView textView = findViewById(R.id.UsernameText);
+        textView.setText(message);
+         */
+
+
+    }
+
+    public void run ()throws ClassNotFoundException{
+
+
+           try{ //Controller.getData();
+
+               getUserData();
+               textView.setText(Controller.player.getUsername());
+
+               statsButton = (Button) findViewById(R.id.statsButton);
+               statsButton.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       openStatsActivity();
+                   }
+               });
+
+               trainButton = (Button) findViewById(R.id.trainButton);
+               trainButton.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       openTrainingActivity();
+                   }
+               });
+
+               battleButton = (Button) findViewById(R.id.battleButton);
+               battleButton.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       openBattleActivity();
+                   }
+               });
 
                 /*
                 logoutButton = (Button) findViewById(R.id.logoutButton);
@@ -104,45 +139,12 @@ public class MainActivity extends AppCompatActivity {
             TextView textView = findViewById(R.id.UsernameText);
             textView.setText(welcomeBack);*/
 
-                // otherwise, if the file DNE, go to the Login page and create a new user
-            } else {
-
-                //String name = getNewUsername();
-
-                openLoginActivity();
-                //Controller.saveData();
-
-            }
-        } catch(IOException e) {
-           // e.getStackTrace();
-            //System.exit(0);
-        } catch(ClassNotFoundException c) {
-           // c.getStackTrace();
-           //System.exit(0);
-        }
-
-
-
-        //LoginActivity.preferenceSettings = getPreferences(LoginActivity.PREFERENCE_MODE_PRIVATE);
-
-        //String uName = LoginActivity.preferenceSettings.getString("username", "user");
-
-        /*
-        // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
-
-
-        // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.UsernameText);
-        textView.setText(message);
-         */
-
+               // otherwise, if the file DNE, go to the Login page and create a new user
+           } catch (IOException e) {
+               e.printStackTrace();
+           }
 
     }
-
-
-
 
     public void openStatsActivity() {
         Intent intent = new Intent(this, StatsActivity.class);
@@ -160,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openLoginActivity() {
         Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent,LOGIN_REQUEST);
     }
 
 
@@ -170,14 +172,65 @@ public class MainActivity extends AppCompatActivity {
         try {
             FileInputStream fileStream = openFileInput("database.dat");
             ObjectInputStream in = new ObjectInputStream(fileStream);
-            player = (Player) in.readObject();
+            player = (driver.Player)in.readObject();
             Controller.player = player;
+            fileStream.close();
+            in.close();
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent dataIntent) {
+        super.onActivityResult(requestCode, resultCode, dataIntent);
+
+
+        switch (requestCode)
+        {
+            // This request code is set by startActivityForResult(intent, REQUEST_CODE_1) method.
+            case LOGIN_REQUEST:
+                if(resultCode == RESULT_OK)
+                {
+                    try {
+                        String username = dataIntent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
+                        establishPlayer(username);
+                        run();
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+                else
+                    openLoginActivity();
+        }
+    }
+
+    public void establishPlayer(String username){
+        try{
+            Player player = new Player(username);
+            Controller.player = player;
+            saveUserData(player);
+            Controller.saveData();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveUserData(Player player) throws IOException {
+
+        try {
+            FileOutputStream fileStream  = openFileOutput("database.dat", MODE_PRIVATE);
+            ObjectOutputStream out = new ObjectOutputStream(fileStream);
+            out.writeObject(player);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 
     /*public void sendStatsMessage(View view) throws IOException {
         Intent intent = new Intent(this, StatsActivity.class);

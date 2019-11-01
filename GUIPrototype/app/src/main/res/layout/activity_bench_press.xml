@@ -7,7 +7,7 @@
     tools:context=".BenchPressActivity">
 
     <TextView
-        android:id="@+id/bpTextView"
+        android:id="@+id/exerciseTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/benchDataTextView"
+        android:id="@+id/exerciseDataTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -39,11 +39,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bpTextView"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseTextView"
         tools:text="@string/no_bp_data" />
 
     <Button
-        android:id="@+id/addSetButtoninBP"
+        android:id="@+id/addSetButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -53,12 +53,12 @@
         android:layout_marginRight="24dp"
         android:text="@string/add_sets"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/saveButtonInBP"
+        app:layout_constraintEnd_toStartOf="@+id/saveExerciseButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/benchDataTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/exerciseDataTextView" />
 
     <Button
-        android:id="@+id/saveButtonInBP"
+        android:id="@+id/saveExerciseButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -69,6 +69,6 @@
         android:text="@string/sava_data"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/addSetButtoninBP"
-        app:layout_constraintTop_toBottomOf="@+id/benchDataTextView" />
+        app:layout_constraintStart_toEndOf="@+id/addSetButton"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseDataTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

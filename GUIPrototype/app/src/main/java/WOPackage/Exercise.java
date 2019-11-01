@@ -53,18 +53,31 @@ public class Exercise implements Serializable {
         for (int i = 0; i <sets.size(); i++) {
             average += sets.get(i).getReps();
         }
-        average = average/sets.size();
+        if (sets.size()> 0)
+            average = average/sets.size();
+        else
+            average = 0;
 
         return average;
     }
 
-    public void printExercise(){
+    public String printExercise(){
+        String message = new String();
+        StringBuilder stringBuilder = new StringBuilder(message);
 
-        System.out.println(name);
+        if (!sets.isEmpty()) {
+            for (int i = 0; i < sets.size(); i++) {
+                stringBuilder.append(sets.get(i).getReps() + " reps @ " + sets.get(i).getWeight()
+                        + "lbs.\n");
+            }
 
-        for (int i = 0; i < sets.size(); i++) {
-            System.out.println(sets.get(i).getReps() + " reps @ " + sets.get(i).getWeight()
-                    + "lbs.");
+            return stringBuilder.toString();
+
+        }
+        else {
+
+            return "**No Set Data**";
+
         }
     }
 
