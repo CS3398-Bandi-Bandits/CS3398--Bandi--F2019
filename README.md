@@ -34,9 +34,13 @@ Android Phone <br>
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
   I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br><br>
-  Completed by Devon Tyson during Spring 1.<BR>
+  Completed by Devon Tyson.<BR>
  Source code can be found in the src file on Github. Files include Player, Skill and related Skill classes, the 2 interfaces - Fightable and Trainable, Controller, MainApp and View. The main frame runs the app, while the player class represents the user. The user has skills and is able to train them. The stats are saved into a database that will load if a player already exists and will create one if it doesn't. My code is used throughout the game as it drives everything and connects everything together.
  
+<b>Support for Multiple Workout</b>
+ I, Kenny, as a person who goes to the gym, want an app that supports multiple workouts.<br>
+ Completed by Jose Herrera.  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.  MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.  TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize objects and level up with the AddSetActivity class.<br>
+ My code is found in CS3398--Bandi--F2019/GUIPrototype/app/src/main/.  I have edited both XML and Java files.
   
 <b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps and logging workouts each day. As you progress your workouts in real life, you character will progress as well. <br>
@@ -59,18 +63,8 @@ steps it takes to get to my class.<br><br>
 Completed By Kenneth Omo<br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
-<br><br>
-Sprint 2<br>
-Completed by Kenneth Omo<br>
-Integrated Pedometer to the GUIPrototype. Source code can be found under GUIProtoype.
 
-<b>Fully Connected GUI: </b><BR>
-The GUI will sit on top of the backend and allow users to navigate the app seamlessly.<BR>
-I, Jose, as a user who enjoys simplicity, want a single contained app where I don't have to keep track of multiple applications.
-<BR>
- 
- Completed by Devon Tyson during Sprint 2<BR>
- Integrated the back end driver into the Login, View Stats and Training Mode screens. My code was written into GUI java and XML files, with a few modifications in the driver back end. Logic was reworked to fit into the Android application. Modifications can be found throughout the application GUI.
+
 
 
 ## Screenshots
