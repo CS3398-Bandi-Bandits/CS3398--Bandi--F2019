@@ -29,4 +29,6 @@
     <string name="cable_fly">Cable Fly</string>
     <string name="over_head_press">Over-Head Press</string>
     <string name="hammer_curl">Hammer Curl</string>
+    <string name="settings_button">Settings</string>
+    <string name="change_name">Change Username:</string>
 </resources>
