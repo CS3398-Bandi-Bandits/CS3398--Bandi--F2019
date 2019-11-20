@@ -6,8 +6,7 @@ import android.os.Bundle;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
-import driver.Player;
+import driver.*;
 
 public class BattleActivity extends AppCompatActivity {
 
@@ -15,8 +14,6 @@ public class BattleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_battle);
-
-
     }
 
     public void publishCSV(Player player){
@@ -34,6 +31,5 @@ public class BattleActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }

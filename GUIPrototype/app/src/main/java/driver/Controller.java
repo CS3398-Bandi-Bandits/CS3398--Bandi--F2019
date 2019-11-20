@@ -102,9 +102,6 @@ public class Controller {
 		fileStream.close();
 	}
 
-
-
-	
 	public static boolean doesDatabaseExist(String[] files) throws IOException, ClassNotFoundException{
 
 		for(String file : files) {

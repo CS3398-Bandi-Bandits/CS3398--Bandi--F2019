@@ -3,31 +3,17 @@ package com.example.guiprototype;
 import androidx.appcompat.app.AppCompatActivity;
 
 import driver.*;
-
-import android.app.Activity;
-import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import com.google.gson.Gson;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.HashMap;
-import java.util.Map;
-
-import static driver.Controller.doesDatabaseExist;
-import static driver.Controller.player;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     private Button trainButton;
     private Button battleButton;
     private Button settingsButton;
-    //private Button logoutButton;
     private TextView textView;
 
     @Override
@@ -48,11 +33,12 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.UsernameText);
         String[] files = fileList();
 
-
         try {
+		// if account doesn't exist, create one
             if(!Controller.doesDatabaseExist(files)){
                 openLoginActivity();
             }
+		// otherwise, go to the main screen
             else {
                 run();
             }
@@ -61,28 +47,9 @@ public class MainActivity extends AppCompatActivity {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
-
-        //LoginActivity.preferenceSettings = getPreferences(LoginActivity.PREFERENCE_MODE_PRIVATE);
-
-        //String uName = LoginActivity.preferenceSettings.getString("username", "user");
-
-        /*
-        // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(LoginActivity.EXTRA_MESSAGE);
-
-
-        // Capture the layout's TextView and set the string as its text
-        TextView textView = findViewById(R.id.UsernameText);
-        textView.setText(message);
-         */
-
-
     }
 
-    public void run ()throws ClassNotFoundException{
-
+    public void run() throws ClassNotFoundException{
 
            try{ //Controller.getData();
 
@@ -121,38 +88,9 @@ public class MainActivity extends AppCompatActivity {
                    }
                });
 
-                /*
-                logoutButton = (Button) findViewById(R.id.logoutButton);
-                logoutButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        openLoginActivity();
-                    }
-                });
-                */
-
-            /*String username = Controller.getPlayer().getUsername();
-            String welcomeBack = "Welcome back, " + username + "!";
-
-            TextView textView = findViewById(R.id.UsernameText);
-            textView.setText(welcomeBack);*/
-
-            /*Gson gson = new Gson();
-            String json = sharedPreferences.getString("MyObject", "");
-            Player player = gson.fromJson(json, Player.class);
-
-
-            String username = Controller.getPlayer().getUsername();
-            String welcomeBack = "Welcome back, " + username + "!";
-
-            TextView textView = findViewById(R.id.UsernameText);
-            textView.setText(welcomeBack);*/
-
-               // otherwise, if the file DNE, go to the Login page and create a new user
            } catch (IOException e) {
                e.printStackTrace();
            }
-
     }
 
     public void openStatsActivity() {
@@ -199,7 +137,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent dataIntent) {
         super.onActivityResult(requestCode, resultCode, dataIntent);
 
-
         switch (requestCode)
         {
             // This request code is set by startActivityForResult(intent, REQUEST_CODE_1) method.
@@ -241,23 +178,5 @@ public class MainActivity extends AppCompatActivity {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
     }
-
-    /*public void sendStatsMessage(View view) throws IOException {
-        Intent intent = new Intent(this, StatsActivity.class);
-
-        HashMap<String, Integer> stats = Controller.playerStats();
-        String message = "";
-        for (Map.Entry<String, Integer> entry : stats.entrySet()) {
-            message = entry.getKey() + ": " + entry.getValue();
-        }
-
-        //Player player = new Player(message);
-        //Controller.saveData();
-
-        //intent.putExtra(EXTRA_MESSAGE_MAIN, message);
-        startActivity(intent);
-    }*/
 }

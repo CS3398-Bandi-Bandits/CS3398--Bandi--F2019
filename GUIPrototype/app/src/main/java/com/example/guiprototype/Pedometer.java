@@ -11,11 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import java.io.IOException;
-
-import driver.Controller;
-import driver.Skill;
+import driver.*;
 
 public class Pedometer extends AppCompatActivity implements SensorEventListener, StepListener {
 
@@ -115,17 +112,5 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
     public void step(long timeNs) {
         numSteps++;
         TvSteps.setText(TEXT_NUM_STEPS + numSteps);
-
-
-        // testing
-/*        try {
-
-            Skill skill = Controller.player.getSpeedSkill();
-            Controller.trainingMode(skill, numSteps);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
     }
 }

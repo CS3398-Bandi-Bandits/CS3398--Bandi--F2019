@@ -8,17 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-
-import WOPackage.Exercise;
-import WOPackage.WorkoutLog;
-import driver.Controller;
-import driver.Player;
-import driver.Skill;
+import WOPackage.*;
+import driver.*;
 
 public class ExerciseActivity extends AppCompatActivity {
 
