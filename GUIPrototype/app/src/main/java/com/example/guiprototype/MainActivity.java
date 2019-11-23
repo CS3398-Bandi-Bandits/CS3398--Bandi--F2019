@@ -14,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import com.WOPackage.FitWarriors.UnityPlayerActivity;//added unity object
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
                    @Override
                    public void onClick(View v) {
                        openBattleActivity();
+
                    }
                });
 
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openBattleActivity() {
-        Intent intent = new Intent(this, BattleActivity.class);
+        Intent intent = new Intent(this, UnityPlayerActivity.class);
         startActivity(intent);
     }
     public void openSettingsActivity() {
