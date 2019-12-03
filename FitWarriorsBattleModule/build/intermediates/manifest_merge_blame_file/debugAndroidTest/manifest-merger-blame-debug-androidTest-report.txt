@@ -3,140 +3,140 @@
 3    package="com.WOPackage.FitWarriors.test" >
 4
 5    <uses-sdk
-5-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:5:5-74
+5-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:5:5-74
 6        android:minSdkVersion="16"
-6-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:5:15-41
+6-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:5:42-71
+7-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:11:5-15:80
+9-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:11:5-15:80
 10        android:name="android.test.InstrumentationTestRunner"
-10-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:11:22-75
+10-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:11:22-75
 11        android:functionalTest="false"
-11-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:14:22-52
+11-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:13:22-53
+12-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:13:22-53
 13        android:label="Tests for com.WOPackage.FitWarriors.test"
-13-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:15:22-78
+13-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:15:22-78
 14        android:targetPackage="com.WOPackage.FitWarriors.test" />
-14-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:12:22-76
+14-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:12:22-76
 15
 16    <supports-screens
-16-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-18:40
+16-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-18:40
 17        android:anyDensity="true"
-17-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-34
+17-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-34
 18        android:largeScreens="true"
-18-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-36
+18-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-36
 19        android:normalScreens="true"
-19-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-37
+19-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-37
 20        android:smallScreens="true"
-20-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-36
+20-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-36
 21        android:xlargeScreens="true" />
-21-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-37
+21-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-37
 22
 23    <uses-feature android:glEsVersion="0x00020000" />
-23-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-54
-23-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:19-51
+23-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-54
+23-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:19-51
 24
 25    <uses-permission android:name="android.permission.INTERNET" />
-25-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-67
-25-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-64
+25-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-67
+25-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-64
 26    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-26-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-86
-26-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-83
+26-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:5-86
+26-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:22-83
 27
 28    <uses-feature
-28-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-27:36
+28-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-27:36
 29        android:name="android.hardware.touchscreen"
-29-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-52
+29-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-52
 30        android:required="false" />
-30-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-33
+30-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-33
 31    <uses-feature
-31-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:5-30:36
+31-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:5-30:36
 32        android:name="android.hardware.touchscreen.multitouch"
-32-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-63
+32-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-63
 33        android:required="false" />
-33-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-33
+33-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-33
 34    <uses-feature
-34-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:5-33:36
+34-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:5-33:36
 35        android:name="android.hardware.touchscreen.multitouch.distinct"
-35-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:9-72
+35-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:9-72
 36        android:required="false" />
-36-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-33
+36-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-33
 37
 38    <application
-38-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:7:5-9:19
+38-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:7:5-9:19
 39        android:banner="@drawable/app_banner"
-39-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-46
+39-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-46
 40        android:debuggable="true"
-40-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:7:18-43
+40-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:7:18-43
 41        android:icon="@mipmap/app_icon"
-41-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-40
+41-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-40
 42        android:isGame="true"
-42-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:9-30
+42-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:9-30
 43        android:label="@string/app_name"
-43-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-41
+43-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-41
 44        android:theme="@style/UnityThemeSelector" >
-44-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:9-50
+44-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:9-50
 45        <uses-library android:name="android.test.runner" />
-45-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:8:9-60
-45-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6056921129264518828.xml:8:23-57
+45-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:8:9-60
+45-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger147350023130293454.xml:8:23-57
 46
 47        <activity
-47-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-58:20
+47-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-58:20
 48            android:name="com.WOPackage.FitWarriors.UnityPlayerActivity"
-48-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-73
+48-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-73
 49            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-49-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-194
+49-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-194
 50            android:hardwareAccelerated="false"
-50-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-48
+50-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-48
 51            android:label="@string/app_name"
-51-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-45
+51-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-45
 52            android:launchMode="singleTask"
-52-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-44
+52-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-44
 53            android:screenOrientation="fullSensor" >
-53-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-51
+53-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-51
 54            <intent-filter>
-54-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-53:29
+54-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-53:29
 55                <action android:name="android.intent.action.MAIN" />
-55-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:17-69
-55-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:25-66
+55-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:17-69
+55-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:25-66
 56
 57                <category android:name="android.intent.category.LAUNCHER" />
-57-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:17-77
-57-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:27-74
+57-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:17-77
+57-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:27-74
 58                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-58-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:17-86
-58-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:27-83
+58-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:17-86
+58-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:27-83
 59            </intent-filter>
 60
 61            <meta-data
-61-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-57:40
+61-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-57:40
 62                android:name="unityplayer.UnityActivity"
-62-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:17-57
+62-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:17-57
 63                android:value="true" />
-63-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:17-37
+63-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:17-37
 64        </activity>
 65
 66        <meta-data
-66-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:9-62:68
+66-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:9-62:68
 67            android:name="unity.build-id"
-67-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-42
-68            android:value="9fd96801-3a29-435a-94b6-6f870acee02f" />
-68-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-65
+67-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-42
+68            android:value="63f2fee5-1770-4d1d-a0f3-5ff60af330c9" />
+68-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-65
 69        <meta-data
-69-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:9-65:33
+69-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:9-65:33
 70            android:name="unity.splash-mode"
-70-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:13-45
+70-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:13-45
 71            android:value="0" />
-71-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:13-30
+71-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:13-30
 72        <meta-data
-72-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:9-68:36
+72-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:9-68:36
 73            android:name="unity.splash-enable"
-73-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-47
+73-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-47
 74            android:value="True" />
-74-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-33
+74-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-33
 75    </application>
 76
 77</manifest>
