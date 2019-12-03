@@ -1,2 +1,5 @@
 include ':app'
+
+include ':FitWarriorsBattleModule'
+project(':FitWarriorsBattleModule').projectDir=new File('..\\FitWarriorsBattleModule')
 rootProject.name='GUI Prototype'
