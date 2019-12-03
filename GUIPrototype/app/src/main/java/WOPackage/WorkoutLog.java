@@ -36,7 +36,9 @@ public class WorkoutLog implements Serializable{
                     
                     //testing
                     //System.out.println(backLog.get(i).getName());
-                    backLog.add(current);
+
+                    backLog.remove(i);
+                    backLog.add(i, current);
                 }
                 else
                     backLog.add(current);
