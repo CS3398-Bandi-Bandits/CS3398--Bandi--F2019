@@ -4,30 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import driver.*;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
-
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.HashMap;
-import java.util.Map;
-
-import static driver.Controller.doesDatabaseExist;
-import static driver.Controller.player;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button trainButton;
     private Button battleButton;
     private Button settingsButton;
-    //private Button logoutButton;
+    private Button logoutButton;
     private TextView textView;
 
     @Override
@@ -113,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                    }
                });
 
+               /*
                settingsButton = (Button) findViewById(R.id.settingsButton);
                settingsButton.setOnClickListener(new View.OnClickListener() {
                    @Override
@@ -120,16 +109,17 @@ public class MainActivity extends AppCompatActivity {
                        openSettingsActivity();
                    }
                });
-
-                /*
-                logoutButton = (Button) findViewById(R.id.logoutButton);
-                logoutButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        openLoginActivity();
-                    }
-                });
                 */
+
+
+               logoutButton = (Button) findViewById(R.id.logoutButton);
+               logoutButton.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View v) {
+                       openLoginActivity();
+                   }
+               });
+
 
             /*String username = Controller.getPlayer().getUsername();
             String welcomeBack = "Welcome back, " + username + "!";
@@ -244,20 +234,4 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-    /*public void sendStatsMessage(View view) throws IOException {
-        Intent intent = new Intent(this, StatsActivity.class);
-
-        HashMap<String, Integer> stats = Controller.playerStats();
-        String message = "";
-        for (Map.Entry<String, Integer> entry : stats.entrySet()) {
-            message = entry.getKey() + ": " + entry.getValue();
-        }
-
-        //Player player = new Player(message);
-        //Controller.saveData();
-
-        //intent.putExtra(EXTRA_MESSAGE_MAIN, message);
-        startActivity(intent);
-    }*/
 }

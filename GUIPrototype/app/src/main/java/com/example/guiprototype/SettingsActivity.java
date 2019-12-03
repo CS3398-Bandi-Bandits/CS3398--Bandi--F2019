@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class SettingsActivity extends AppCompatActivity {
+import driver.Player;
 
-    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
+public class SettingsActivity extends AppCompatActivity {
 
     private EditText editText;
     private Button submitButton;
+    private Button logoutButton;
+    private Player player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +29,27 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String username = editText.getText().toString();
-                Intent intent = new Intent();
-                intent.putExtra(EXTRA_MESSAGE, username);
-                setResult(RESULT_OK, intent);
-                finish();
+                player.setUsername(username);
+                openMainActivity();
             }
         });
 
+        logoutButton = (Button) findViewById(R.id.Button);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLoginActivity();
+            }
+        });
+    }
+
+    public void openMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openLoginActivity() {
+        Intent intent = new Intent (this, LoginActivity.class);
+        startActivity(intent);
     }
 }

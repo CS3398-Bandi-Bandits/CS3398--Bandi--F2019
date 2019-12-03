@@ -124,6 +124,7 @@
         <activity
             android:name=".LoginActivity"
             android:label="Login Page" />
+
         <activity
             android:name=".MainActivity"
             android:label="Fit Warriors">
@@ -133,6 +134,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".StartActivity"
             android:label="Start" />

@@ -48,6 +48,10 @@ public class Player implements IFightable, Serializable {
 		
 		return this.username;
 	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 	
 	public int getCombatLevel() {
 		
