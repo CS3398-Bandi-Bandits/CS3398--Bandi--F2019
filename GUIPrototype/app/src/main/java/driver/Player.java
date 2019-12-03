@@ -12,6 +12,8 @@ public class Player implements IFightable, Serializable {
 	private int combatLevel;
 	private String username;
 	private WorkoutLog log;
+	private int lastKnownSteps;
+	private boolean firstPedometer;
 	
 	// constructor for new players
 	public Player(String name) {
@@ -23,6 +25,8 @@ public class Player implements IFightable, Serializable {
 		this.hp = new Hitpoints();
 		this.speed = new Speed();
 		this.combatLevel = 1;
+		this.lastKnownSteps = 0;
+		this.firstPedometer = true;
 	}
 	
 	// constructor for existing players
@@ -69,7 +73,23 @@ public class Player implements IFightable, Serializable {
 		
 		return this.hp;
 	}
-	
+
+	public boolean isFirstPedometer() {
+		return firstPedometer;
+	}
+
+	public void setFirstPedometer(boolean firstPedometer) {
+		this.firstPedometer = firstPedometer;
+	}
+
+	public int getLastKnownSteps() {
+		return lastKnownSteps;
+	}
+
+	public void setLastKnownSteps(int lastKnownSteps) {
+		this.lastKnownSteps = lastKnownSteps;
+	}
+
 	public Skill getSpeedSkill() {
 		
 		return this.speed;

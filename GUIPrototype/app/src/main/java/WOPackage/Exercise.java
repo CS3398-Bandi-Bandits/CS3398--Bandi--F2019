@@ -2,8 +2,10 @@ package WOPackage;
 
 import java.io.Console;
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
+import java.util.Calendar;
 
 public class Exercise implements Serializable {
 
@@ -13,6 +15,8 @@ public class Exercise implements Serializable {
     public Exercise(String name){
         this.name = name;
         this.sets = new ArrayList<>();
+
+
     }
 
     public void setName(String name) {
@@ -61,14 +65,14 @@ public class Exercise implements Serializable {
         return average;
     }
 
-    public String printExercise(){
+    public String toString(){
         String message = new String();
         StringBuilder stringBuilder = new StringBuilder(message);
 
         if (!sets.isEmpty()) {
             for (int i = 0; i < sets.size(); i++) {
-                stringBuilder.append(sets.get(i).getReps() + " reps @ " + sets.get(i).getWeight()
-                        + "lbs.\n");
+                stringBuilder.append(sets.get(i).getReps() +
+                        " reps @ " + sets.get(i).getWeight() + "lbs.\n");
             }
 
             return stringBuilder.toString();
