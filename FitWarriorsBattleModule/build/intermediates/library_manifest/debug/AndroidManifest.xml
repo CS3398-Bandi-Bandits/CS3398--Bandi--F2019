@@ -21,12 +21,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
 
     <uses-feature
         android:name="android.hardware.touchscreen"
@@ -51,6 +45,13 @@
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="fullSensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
             <meta-data
                 android:name="unityplayer.UnityActivity"
                 android:value="true" />
@@ -58,7 +59,7 @@
 
         <meta-data
             android:name="unity.build-id"
-            android:value="2bcc201f-70b8-4e6e-adf5-d5239481a176" />
+            android:value="9fd96801-3a29-435a-94b6-6f870acee02f" />
         <meta-data
             android:name="unity.splash-mode"
             android:value="0" />

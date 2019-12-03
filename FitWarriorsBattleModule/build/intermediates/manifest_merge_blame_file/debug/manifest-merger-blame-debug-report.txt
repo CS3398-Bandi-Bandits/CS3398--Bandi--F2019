@@ -1,0 +1,126 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.WOPackage.FitWarriors"
+5    android:installLocation="preferExternal"
+6    android:versionCode="1"
+7    android:versionName="1.0" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="16"
+10-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml
+11        android:targetSdkVersion="29" />
+11-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml
+12
+13    <supports-screens
+13-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:3:3-163
+14        android:anyDensity="true"
+14-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:3:135-160
+15        android:largeScreens="true"
+15-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:3:78-105
+16        android:normalScreens="true"
+16-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:3:49-77
+17        android:smallScreens="true"
+17-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:3:21-48
+18        android:xlargeScreens="true" />
+18-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:3:106-134
+19
+20    <uses-feature android:glEsVersion="0x00020000" />
+20-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:17:3-52
+20-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:17:17-49
+21
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:18:3-65
+22-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:18:20-62
+23    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+23-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:19:3-84
+23-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:19:20-81
+24
+25    <uses-feature
+25-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:20:3-88
+26        android:name="android.hardware.touchscreen"
+26-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:20:17-60
+27        android:required="false" />
+27-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:20:61-85
+28    <uses-feature
+28-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:21:3-99
+29        android:name="android.hardware.touchscreen.multitouch"
+29-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:21:17-71
+30        android:required="false" />
+30-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:21:72-96
+31    <uses-feature
+31-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:22:3-108
+32        android:name="android.hardware.touchscreen.multitouch.distinct"
+32-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:22:17-80
+33        android:required="false" />
+33-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:22:81-105
+34
+35    <application
+35-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:4:3-16:17
+36        android:banner="@drawable/app_banner"
+36-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:4:145-182
+37        android:icon="@mipmap/app_icon"
+37-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:4:58-89
+38        android:isGame="true"
+38-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:4:123-144
+39        android:label="@string/app_name"
+39-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:4:90-122
+40        android:theme="@style/UnityThemeSelector" >
+40-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:4:16-57
+41        <activity
+41-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:5-12:16
+42            android:name="com.WOPackage.FitWarriors.UnityPlayerActivity"
+42-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:337-397
+43            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+43-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:119-300
+44            android:hardwareAccelerated="false"
+44-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:301-336
+45            android:label="@string/app_name"
+45-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:15-47
+46            android:launchMode="singleTask"
+46-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:87-118
+47            android:screenOrientation="fullSensor" >
+47-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:5:48-86
+48            <intent-filter>
+48-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:6:7-10:23
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:7:9-61
+49-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:7:17-58
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:8:9-69
+51-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:8:19-66
+52                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+52-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:9:9-78
+52-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:9:19-75
+53            </intent-filter>
+54
+55            <meta-data
+55-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:11:7-82
+56                android:name="unityplayer.UnityActivity"
+56-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:11:18-58
+57                android:value="true" />
+57-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:11:59-79
+58        </activity>
+59
+60        <meta-data
+60-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:13:5-101
+61            android:name="unity.build-id"
+61-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:13:16-45
+62            android:value="9fd96801-3a29-435a-94b6-6f870acee02f" />
+62-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:13:46-98
+63        <meta-data
+63-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:14:5-69
+64            android:name="unity.splash-mode"
+64-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:14:16-48
+65            android:value="0" />
+65-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:14:49-66
+66        <meta-data
+66-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:15:5-74
+67            android:name="unity.splash-enable"
+67-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:15:16-50
+68            android:value="True" />
+68-->C:\Users\kenne\Desktop\FuckWithdis\FitWarriorsBattleModule\src\main\AndroidManifest.xml:15:51-71
+69    </application>
+70
+71</manifest>
