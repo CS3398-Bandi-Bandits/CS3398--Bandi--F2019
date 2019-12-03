@@ -29,7 +29,7 @@
     <string name="cable_fly">Cable Fly</string>
     <string name="over_head_press">Over-Head Press</string>
     <string name="hammer_curl">Hammer Curl</string>
-    <string name="settings_button">Settings</string>
+    <string name="button_logout">Logout</string>
     <string name="change_name">Change Username:</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">

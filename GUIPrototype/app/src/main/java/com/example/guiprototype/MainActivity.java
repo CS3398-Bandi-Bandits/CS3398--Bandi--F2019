@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private Button statsButton;
     private Button trainButton;
     private Button battleButton;
-    private Button settingsButton;
+    private Button logoutButton;
     private TextView textView;
 
     @Override
@@ -80,11 +80,11 @@ public class MainActivity extends AppCompatActivity {
                    }
                });
 
-               settingsButton = (Button) findViewById(R.id.settingsButton);
-               settingsButton.setOnClickListener(new View.OnClickListener() {
+               logoutButton = (Button) findViewById(R.id.logoutButton);
+               logoutButton.setOnClickListener(new View.OnClickListener() {
                    @Override
                    public void onClick(View v) {
-                       openSettingsActivity();
+                       openLoginActivity();
                    }
                });
 
@@ -105,10 +105,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void openBattleActivity() {
         Intent intent = new Intent(this, BattleActivity.class);
-        startActivity(intent);
-    }
-    public void openSettingsActivity() {
-        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
     public void openLoginActivity() {
