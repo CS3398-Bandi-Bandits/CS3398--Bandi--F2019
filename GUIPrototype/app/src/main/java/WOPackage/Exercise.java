@@ -2,8 +2,10 @@ package WOPackage;
 
 import java.io.Console;
 import java.io.Serializable;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-
+import java.util.Calendar;
 
 public class Exercise implements Serializable {
 
@@ -13,6 +15,8 @@ public class Exercise implements Serializable {
     public Exercise(String name){
         this.name = name;
         this.sets = new ArrayList<>();
+
+
     }
 
     public void setName(String name) {

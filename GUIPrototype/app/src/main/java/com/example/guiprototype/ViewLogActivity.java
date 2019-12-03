@@ -20,11 +20,12 @@ public class ViewLogActivity extends AppCompatActivity {
 
         ArrayList<Exercise> log = Controller.player.getLog().getBackLog();
 
-        ArrayList<com.example.guiprototype.ListViewBlock> listViewBlocks = new ArrayList<>();
+        ArrayList<ListViewBlock> listViewBlocks = new ArrayList<>();
 
         for (Exercise e:log) {
 
-            listViewBlocks.add(new com.example.guiprototype.ListViewBlock(e.getName(),e.toString()));
+
+            listViewBlocks.add(new ListViewBlock(e.getName(),e.toString()));
 
         }
 
