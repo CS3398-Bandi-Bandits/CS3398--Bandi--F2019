@@ -1,3 +1,5 @@
+
+
 package com.example.guiprototype;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,16 +13,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
 import java.io.IOException;
 import driver.*;
 
-public class Pedometer extends AppCompatActivity implements SensorEventListener, StepListener {
+public class Pedometer extends AppCompatActivity implements SensorEventListener {
 
     private StepDetector simpleStepDetector;
     private SensorManager sensorManager;
-    private Sensor accel;
+    private Sensor counter;
     private static final String TEXT_NUM_STEPS = "Number of Steps: ";
-    private int numSteps;
+    private int expSteps;
+    private int lastKnownSteps;
+    private int stepsSinceBoot;
+    private int firstTimeCounter;
+    private int firstSteps;
+    private boolean firstTimeUser;
+    private boolean firstIteration;
+
 
     private TextView TvSteps;
 
@@ -31,42 +41,52 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedometer);
 
+        TvSteps = (TextView)findViewById(R.id.tv_steps);
+
         // Get an instance of the SensorManager
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        accel = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        simpleStepDetector = new StepDetector();
-        simpleStepDetector.registerListener(this);
+        counter = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_COUNTER);
+       /* simpleStepDetector = new StepDetector();
+        simpleStepDetector.registerListener(this);*/
+
+       lastKnownSteps = Controller.player.getLastKnownSteps();
+
+       firstTimeUser = Controller.player.isFirstPedometer();
+
+       firstIteration = true;
 
         TvSteps = (TextView) findViewById(R.id.tv_steps);
-        BtnStart = (Button) findViewById(R.id.btn_start);
-        BtnStop = (Button) findViewById(R.id.btn_stop);
+    //    BtnStart = (Button) findViewById(R.id.btn_start);
+  //      BtnStop = (Button) findViewById(R.id.btn_stop);
         Save = (Button) findViewById(R.id.viewXP);
 
         // always listen for steps
-        sensorManager.registerListener(Pedometer.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
-
-        BtnStart.setOnClickListener(new android.view.View.OnClickListener(){
+        sensorManager.registerListener(Pedometer.this, counter, SensorManager.SENSOR_DELAY_UI);
+     /*   BtnStart.setOnClickListener(new android.view.View.OnClickListener(){
 
             @Override
             public void onClick(View arg0) {
 
-                sensorManager.registerListener(Pedometer.this, accel, SensorManager.SENSOR_DELAY_FASTEST);
+                sensorManager.registerListener(Pedometer.this, counter, SensorManager.SENSOR_DELAY_FASTEST);
             }
         });
+    */
 
-
-        BtnStop.setOnClickListener(new View.OnClickListener(){
+       /* BtnStop.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View arg0) {
 
-                //numSteps = 20000; // testing
+                //expSteps = 20000; // testing
                 sensorManager.unregisterListener(Pedometer.this);
             }
         });
+*/
+
 
         Save.setOnClickListener(new View.OnClickListener(){
 
@@ -77,14 +97,17 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
                 try {
 
                     Skill skill = Controller.player.getSpeedSkill();
-                    Controller.trainingMode(skill, numSteps);
-                    numSteps = 0;
+                    Controller.player.setLastKnownSteps(stepsSinceBoot);
+                    Controller.player.setFirstPedometer(false);
+                    Controller.trainingMode(skill, expSteps);
+                    expSteps = 0;
+
 
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
 
-                openTrainingActivity();
+                finish();
             }
         });
 
@@ -97,9 +120,25 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
 
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-            simpleStepDetector.updateAccel(
-                    event.timestamp, event.values[0], event.values[1], event.values[2]);
+        if (event.sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
+
+            stepsSinceBoot = (int) event.values[0];
+
+            if (firstTimeUser){
+                if (firstIteration){
+                    firstSteps = stepsSinceBoot;
+                    TvSteps.setText("0");
+                    firstIteration = false;
+                }else
+                {
+                    firstTimeCounter = stepsSinceBoot - firstSteps;
+                    TvSteps.setText(Integer.toString(firstTimeCounter));
+                }
+            }
+
+            expSteps = stepsSinceBoot - lastKnownSteps;
+
+            TvSteps.setText(Integer.toString(expSteps));
         }
     }
 
@@ -108,9 +147,5 @@ public class Pedometer extends AppCompatActivity implements SensorEventListener,
 
     }
 
-    @Override
-    public void step(long timeNs) {
-        numSteps++;
-        TvSteps.setText(TEXT_NUM_STEPS + numSteps);
-    }
+
 }
