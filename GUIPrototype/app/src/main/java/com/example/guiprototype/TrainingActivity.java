@@ -56,6 +56,11 @@ public class TrainingActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openViewLogActivity(View view){
+        Intent intent = new Intent(this,ViewLogActivity.class);
+        startActivity(intent);
+    }
+
     public void saveUserData(Player player) throws IOException {
 
         try {

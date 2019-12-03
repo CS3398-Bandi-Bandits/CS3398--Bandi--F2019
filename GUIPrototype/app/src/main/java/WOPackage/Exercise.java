@@ -61,14 +61,14 @@ public class Exercise implements Serializable {
         return average;
     }
 
-    public String printExercise(){
+    public String toString(){
         String message = new String();
         StringBuilder stringBuilder = new StringBuilder(message);
 
         if (!sets.isEmpty()) {
             for (int i = 0; i < sets.size(); i++) {
-                stringBuilder.append(sets.get(i).getReps() + " reps @ " + sets.get(i).getWeight()
-                        + "lbs.\n");
+                stringBuilder.append(sets.get(i).getReps() +
+                        " reps @ " + sets.get(i).getWeight() + "lbs.\n");
             }
 
             return stringBuilder.toString();

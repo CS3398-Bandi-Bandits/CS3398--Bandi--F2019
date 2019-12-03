@@ -1,6 +1,5 @@
 package com.example.guiprototype;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,7 +11,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
-import WOPackage.*;
+
+import WOPackage.Exercise;
 import driver.*;
 
 public class ExerciseActivity extends AppCompatActivity {
@@ -118,7 +118,7 @@ public class ExerciseActivity extends AppCompatActivity {
 
     public void publishSets(Exercise exercise){
         TextView setDataView = findViewById(R.id.exerciseDataTextView);
-        String setData = exercise.printExercise();
+        String setData = exercise.toString();
         setDataView.setText(setData);
     }
 
