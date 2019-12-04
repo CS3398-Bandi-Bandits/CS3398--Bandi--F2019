@@ -1,5 +1,5 @@
 # Fit Warriors
-![Fit Warriors Logo](https://github.com/CS3398-Bandi-Bandits/CS3398--Bandi--F2019/blob/master/ic_launcher-web.png)
+![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
 
 ## Table of contents
 * [General info](#general-info)
@@ -64,6 +64,12 @@ steps it takes to get to my class.<br><br>
 - Completed By Kenneth Omo<br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
+
+<b>Background Pedometer and Workout History</><br>
+I, Jose, as a user who likes to reflect over past progress, would like to be able to view my workout history.<br><br>
+- Completed by Jose.<br>
+The history is created in the ViewLogActivity.java, activity_view_log.xml, ExerciseListAdapter.java, ListViewBlock.java , and Pedometer.java files.  The first three work together to implement a scrollable list activated by a button in TrainingActivity.
+Pedometer.java accesses the phones native step counter and formats it for our app.
 
 
 <b>Fully Connected Application: </b><BR>
