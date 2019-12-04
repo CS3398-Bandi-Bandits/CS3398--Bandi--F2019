@@ -32,7 +32,8 @@ Android Phone <br>
  The Unity Project files can be unpacked from UnityGame.zip (Requires Unity installed) The scripts for game objects are in a separate folder called Script. The Unity project will be our battle module for the game. When players want to battle with their trained skills they will enter this battle module and fight eachother using Unity's Game Engine. The Battle Module should populate the Hero with all the stats and attriubutes tracked by the backend java source code. 
  
  <b>Updated Animations for your personal character:</b> <br>
- The personal character has been updated to real spartan warrior models and has added animations when attacking, defending, moving, idling, and when defeated.<br>
+ The personal character has been updated to real spartan warrior models and has added animations when attacking, defending, moving, idling, and when defeated.<br><BR>
+ I, Dakota, as a gamer who loves visual appearance, would like my character to look great while battling.<BR>
  
 - Completed by Dakota and Kenneth during Sprint 3<BR> 
  The new character models and animations can be found inside the battle module for the application. Once the application is running, click battle to enter the Unity Game module. In there you will see the new spartan warrior character models and their animations for attacking, defending, walking, idling, and death. 
@@ -47,7 +48,7 @@ Android Phone <br>
  You can choose amongst many workouts on the training screen in order to maximize your workouts.<BR><BR>
  I, Kenny, as a person who goes to the gym, want an app that supports multiple workouts.<br>
  
-- Completed by Jose Herrera.<BR>
+- Completed by Jose Herrera<BR>
  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.    MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.    TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize  objects and level up with the AddSetActivity class.<br>
  My code is found in CS3398--Bandi--F2019/GUIPrototype/app/src/main/.  I have edited both XML and Java files.
   
