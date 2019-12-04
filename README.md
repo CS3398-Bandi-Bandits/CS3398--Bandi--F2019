@@ -43,7 +43,7 @@ Android Phone <br>
 -  Completed by Devon Tyson during Sprint 1<BR>
  Source code can be found in the src file on Github. Files include Player, Skill and related Skill classes, the 2 interfaces - Fightable and Trainable, Controller, MainApp and View. The main frame runs the app, while the player class represents the user. The user has skills and is able to train them. The stats are saved into a database that will load if a player already exists and will create one if it doesn't. My code is used throughout the game as it drives everything and connects everything together.
  
-<b>Support for Multiple Workouts</b><BR>
+<b>Support for Multiple Workouts:</b><BR>
  You can choose amongst many workouts on the training screen in order to maximize your workouts.<BR><BR>
  I, Kenny, as a person who goes to the gym, want an app that supports multiple workouts.<br>
  
@@ -75,7 +75,7 @@ Source code can be found under GuiPrototype. Implemented an icon for the app tha
 <b>Biometrics:</b> <br>
 Built in pedometer used to track steps right from your phone. <br><BR>
 I, Kenny, as a person who walks to campus from really far away, would like to keep track of how many
-steps it takes to get to my class.<br><br>
+steps it takes to get to my class.<br>
 - Completed By Kenneth Omo<br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
