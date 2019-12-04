@@ -1,5 +1,5 @@
 # Fit Warriors
-![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
+![Fit Warriors Logo](https://github.com/CS3398-Bandi-Bandits/CS3398--Bandi--F2019/blob/master/ic_launcher-web.png)
 
 ## Table of contents
 * [General info](#general-info)
