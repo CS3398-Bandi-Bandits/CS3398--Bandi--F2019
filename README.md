@@ -30,7 +30,13 @@ Android Phone <br>
   
  - Completed by Dakota<BR>
  The Unity Project files can be unpacked from UnityGame.zip (Requires Unity installed) The scripts for game objects are in a separate folder called Script. The Unity project will be our battle module for the game. When players want to battle with their trained skills they will enter this battle module and fight eachother using Unity's Game Engine. The Battle Module should populate the Hero with all the stats and attriubutes tracked by the backend java source code. 
-  
+ 
+ <b>Updated Animations for your personal character:</b> <br>
+ The personal character has been updated to real spartan warrior models and has added animations when attacking, defending, moving, idling, and when defeated.<br> 
+ 
+- Completed by Dakota during Sprint 3<BR> 
+ Besides implementing the animations for the newly integrated spartan warrior models, I worked with both Kenny and Devon on integrating  the Unity module into the Android Studio application. The entire project is located in GUIPrototype with the newly fused module. 
+ 
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
   I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br>
@@ -65,12 +71,6 @@ steps it takes to get to my class.<br><br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
 
-<b>Background Pedometer and Workout History</><br>
-I, Jose, as a user who likes to reflect over past progress, would like to be able to view my workout history.<br><br>
-- Completed by Jose.<br>
-The history is created in the ViewLogActivity.java, activity_view_log.xml, ExerciseListAdapter.java, ListViewBlock.java , and Pedometer.java files.  The first three work together to implement a scrollable list activated by a button in TrainingActivity.
-Pedometer.java accesses the phones native step counter and formats it for our app.
-
 
 <b>Fully Connected Application: </b><BR>
 The GUI will sit on top of the backend and allow users to navigate the app seamlessly.<BR>
@@ -80,7 +80,7 @@ I, Jose, as a user who enjoys simplicity, want a single contained app where I do
 Integrated the back end driver into the Login, View Stats and Training Mode screens. My code was written into GUI java and XML files, with a few modifications in the driver back end. Logic was reworked to fit into the Android application. Modifications can be found throughout the application GUI.
 
 I, Devon, as person who likes uniformity, wants the player from my Fit Warriors application to be used inside the game.<BR>
-- Completed by Devon Tyson, Dakota Ruhl and Kenneth Omo during 3<BR>
+- Completed by Devon Tyson, Dakota Ruhl and Kenneth Omo during Sprint 3<BR>
 Allows users to open the game from the Fit Warriors application. The GUI calls a reference to the Battle Module when the Battle mode button is pressed and the game is shown on the user's phone. We attempted to get our player information into the game but ran into problems with converting code between Android Studio Java based and Unity C# based platforms. Our code can be found under the GUI prototype. The module called FitWarriorsBattleModule is a reference to the game in the Prototype. The code to call the game can be found in the BattleActivity in the GUI. Programming was done in paired fashion and therefore most commits are from Kenneth Omo's GitHub account.
  
  
