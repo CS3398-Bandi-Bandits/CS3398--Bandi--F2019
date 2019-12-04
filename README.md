@@ -1,5 +1,5 @@
 # Fit Warriors
-![Fit Warriors Logo](https://github.com/CS3398-Bandi-Bandits/CS3398--Bandi--F2019/blob/master/ic_launcher-web.png)
+![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
 
 ## Table of contents
 * [General info](#general-info)
@@ -89,7 +89,7 @@ The Main page has a Settings page that allows the user to change their informati
 I, Devon, as a person who values customization, want to be able to edit my account settings after I have created it.
 <BR>
 - Completed by Victor Hernandez during Sprint 3<BR>
-Implemented a Settings button within the Main page that, once clicked, allows the user to enter the Settings page. Within this page, the user is able to change their username in case they don't like their current username. In addition, the user is given the option to delete their account if they click on the Delete Account button, which is also implemented within the Settings page. This code can be found on GitHub within the following folders: CS3398--Bandi--F2019/GUIPrototype/app/src/main/java/com/example/guiprototype/SettingsActivity.java.
+Implemented a Settings button within the Main page that, once clicked, allows the user to enter the Settings page. Within this page, the user is able to change their username in case they don't like their current username. In addition, the user is given the option to delete their account if they click on the Delete Account button, which is also implemented within the Settings page.
 
 
 ## Screenshots
@@ -114,8 +114,8 @@ Victor:
 - next step: Make GUI more user friendly, implement character customization
 
 Dakota:
-- status: Battle module prototype completed, created base game setup with players and skills/health
-- next step: build onto the game, add attack animations, implement actual battle
+- status: Battle module prototype completed with character models and animations. 
+- next step: improvements to the Battle Module scenery & background, additionals like music/damage popups. 
 
 Kenny:
 - status: Pedometer completed, built temporary testing methods
