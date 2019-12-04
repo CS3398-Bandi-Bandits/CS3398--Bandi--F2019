@@ -1,5 +1,5 @@
 # Fit Warriors
-![Fit Warriors Logo](https://cdn1.imggmi.com/uploads/2019/9/16/5a06c81970fb6e951a290ce9ba9742af-full.png)
+![Fit Warriors Logo](https://github.com/CS3398-Bandi-Bandits/CS3398--Bandi--F2019/blob/master/ic_launcher-web.png)
 
 ## Table of contents
 * [General info](#general-info)
@@ -74,7 +74,7 @@ I, Jose, as a user who enjoys simplicity, want a single contained app where I do
 Integrated the back end driver into the Login, View Stats and Training Mode screens. My code was written into GUI java and XML files, with a few modifications in the driver back end. Logic was reworked to fit into the Android application. Modifications can be found throughout the application GUI.
 
 I, Devon, as person who likes uniformity, wants the player from my Fit Warriors application to be used inside the game.<BR>
-- Completed by Devon Tyson, Dakota Ruhl and Kenneth Omo during Sprint 3<BR>
+- Completed by Devon Tyson, Dakota Ruhl and Kenneth Omo during 3<BR>
 Allows users to open the game from the Fit Warriors application. The GUI calls a reference to the Battle Module when the Battle mode button is pressed and the game is shown on the user's phone. We attempted to get our player information into the game but ran into problems with converting code between Android Studio Java based and Unity C# based platforms. Our code can be found under the GUI prototype. The module called FitWarriorsBattleModule is a reference to the game in the Prototype. The code to call the game can be found in the BattleActivity in the GUI. Programming was done in paired fashion and therefore most commits are from Kenneth Omo's GitHub account.
  
  
@@ -84,14 +84,6 @@ I, Devon, as a person who values customization, want to be able to edit my accou
 <BR>
 - Completed by Victor Hernandez during Sprint 3<BR>
 Implemented a Settings button within the Main page that, once clicked, allows the user to enter the Settings page. Within this page, the user is able to change their username in case they don't like their current username. In addition, the user is given the option to delete their account if they click on the Delete Account button, which is also implemented within the Settings page.
- 
-  <b>Game Visuals: </b><BR>
-The game has updated charcater designs that have animations.<BR>
-I, Dakota, as a gamer who loves visual appearance, would like my character to look great while battling. 
-<BR>
-- Completed by Kenneth Omo during Sprint 3<BR>
-Implemented a spartan and a skeleton to the game that has animation when battle each other. Source code is under FitWarroirsModule and can be seen when the app is launch in Andriod studio.
-
 
 
 ## Screenshots
