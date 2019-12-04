@@ -26,19 +26,20 @@ Android Phone <br>
 ## Features
  <b>Personal character:</b> <br> 
  Have a virtual character that represents the real you. This character will level up as you workout.<br>
-  I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br><BR>
+  I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br>
+  
  - Completed by Dakota<BR>
  The Unity Project files can be unpacked from UnityGame.zip (Requires Unity installed) The scripts for game objects are in a separate folder called Script. The Unity project will be our battle module for the game. When players want to battle with their trained skills they will enter this battle module and fight eachother using Unity's Game Engine. The Battle Module should populate the Hero with all the stats and attriubutes tracked by the backend java source code. 
   
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
-  I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br><br>
+  I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br>
 -  Completed by Devon Tyson during Sprint 1<BR>
  Source code can be found in the src file on Github. Files include Player, Skill and related Skill classes, the 2 interfaces - Fightable and Trainable, Controller, MainApp and View. The main frame runs the app, while the player class represents the user. The user has skills and is able to train them. The stats are saved into a database that will load if a player already exists and will create one if it doesn't. My code is used throughout the game as it drives everything and connects everything together.
  
-<b>Support for Multiple Workout</b>
+<b>Support for Multiple Workout</b><BR>
  I, Kenny, as a person who goes to the gym, want an app that supports multiple workouts.<br>
- <br>
+ 
 - Completed by Jose Herrera.  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.    MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.    TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize  objects and level up with the AddSetActivity class.<br>
  My code is found in CS3398--Bandi--F2019/GUIPrototype/app/src/main/.  I have edited both XML and Java files.
   
