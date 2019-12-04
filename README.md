@@ -35,7 +35,7 @@ Android Phone <br>
  The personal character has been updated to real spartan warrior models and has added animations when attacking, defending, moving, idling, and when defeated.<br> 
  
 - Completed by Dakota during Sprint 3<BR> 
- Besides implementing the animations for the newly integrated spartan warrior models, I worked with both Kenny and Devon on integrating  the Unity module into the Android Studio application. The entire project is located in GUIPrototype with the newly fused module. 
+ The new character models and animations can be found inside the battle module for the application. Once the application is running, click battle to enter the Unity Game module. In there you will see the new spartan warrior character models and their animations for attacking, defending, walking, idling, and death. 
  
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
