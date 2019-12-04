@@ -70,11 +70,13 @@ This code is used for tracking the number of steps a person can take while the a
 The GUI will sit on top of the backend and allow users to navigate the app seamlessly.<BR>
 I, Jose, as a user who enjoys simplicity, want a single contained app where I don't have to keep track of multiple applications.
 <BR><BR>
+Completed by Devon Tyson during Sprint 2<BR>
+Integrated the back end driver into the Login, View Stats and Training Mode screens. My code was written into GUI java and XML files, with a few modifications in the driver back end. Logic was reworked to fit into the Android application. Modifications can be found throughout the application GUI.
+
+I, Devon, as person who likes uniformity, wants the player from my Fit Warriors application to be used inside the game.<BR>
 <BR>
-
- Completed by Devon Tyson during Sprint 2<BR>
- Integrated the back end driver into the Login, View Stats and Training Mode screens. My code was written into GUI java and XML files, with a few modifications in the driver back end. Logic was reworked to fit into the Android application. Modifications can be found throughout the application GUI.
-
+Completed by Devon Tyson, Dakota Ruhl and Kenneth Omo during 3<BR>
+Allows users to open the game from the Fit Warriors application. The GUI calls a reference to the Battle Module when the Battle mode button is pressed and the game is shown on the user's phone. We attempted to get our player information into the game but ran into problems with converting code between Android Studio Java based and Unity C# based platforms. Our code can be found under the GUI prototype. The module called FitWarriorsBattleModule is a reference to the game in the Prototype. The code to call the game can be found in the BattleActivity in the GUI. Programming was done in paired fashion and therefore most commits are from Kenneth Omo's GitHub account.
 
 
 ## Screenshots
