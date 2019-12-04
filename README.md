@@ -123,8 +123,8 @@ Dakota:
 - next step: improvements to the Battle Module scenery & background, additionals like music/damage popups. 
 
 Kenny:
-- status: Pedometer completed, built temporary testing methods
-- next step: integrate with Victor's GUI
+- status: Pedometer completed, built temporary testing methods, completed icon, completed adding models and animations to game, completed adding game to app
+- next step: Work on getting game and app to work better with each other.
 
 Devon:
 - status: Built application driver, built player with all applicable skills, integrated workout package into driver, fully integrated GUI with driver, added Speed skill, refactored code, added Battle Module connectivity to GUI.
