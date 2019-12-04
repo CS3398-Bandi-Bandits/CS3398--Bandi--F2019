@@ -20,7 +20,6 @@
 Unity game engine <br>
 Pedometer <br>
 Java SDK <br>
-Andriod App builder <br>
 Andriod Studio <br>
 Android Phone <br>
 
@@ -28,31 +27,31 @@ Android Phone <br>
  <b>Personal character:</b> <br> 
  Have a virtual character that represents the real you. This character will level up as you workout.<br>
   I, Devon as a gamer, want a game that provides some real world benefit, so that i can feel productive about playing video games. <br><BR>
-  Completed by Dakota<BR>
+ - Completed by Dakota<BR>
  The Unity Project files can be unpacked from UnityGame.zip (Requires Unity installed) The scripts for game objects are in a separate folder called Script. The Unity project will be our battle module for the game. When players want to battle with their trained skills they will enter this battle module and fight eachother using Unity's Game Engine. The Battle Module should populate the Hero with all the stats and attriubutes tracked by the backend java source code. 
   
 <b>View Stats:</b> <br>
   View your real life stats in the game and how they correspond to your character's progression level. All users can use this. <br>
   I, Victor, as a highly-competitive gamer, want a mobile game that can display workout data between friends so that I can push myself to   be the very best (that no one ever was).<br><br>
-  Completed by Devon Tyson during Sprint 1<BR>
+-  Completed by Devon Tyson during Sprint 1<BR>
  Source code can be found in the src file on Github. Files include Player, Skill and related Skill classes, the 2 interfaces - Fightable and Trainable, Controller, MainApp and View. The main frame runs the app, while the player class represents the user. The user has skills and is able to train them. The stats are saved into a database that will load if a player already exists and will create one if it doesn't. My code is used throughout the game as it drives everything and connects everything together.
  
 <b>Support for Multiple Workout</b>
  I, Kenny, as a person who goes to the gym, want an app that supports multiple workouts.<br>
  <br>
- Completed by Jose Herrera.  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.    MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.    TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize  objects and level up with the AddSetActivity class.<br>
+- Completed by Jose Herrera.  I created the java classes ExersizeActivity, AddSetActivity, and highly refactored the classes.    MainActivity, TrainingActivity and LoginActivity.  Previous implementations did not allow for returning to a parent activity.    TrainingActivity supports the different workout buttons passing their names to the ExcersizeActivity as arguments to construct Excersize  objects and level up with the AddSetActivity class.<br>
  My code is found in CS3398--Bandi--F2019/GUIPrototype/app/src/main/.  I have edited both XML and Java files.
   
 <b>Real Life Levelling:</b> <br>
  Level up your character by increasing your steps and logging workouts each day. As you progress your workouts in real life, you character will progress as well. <br>
 I, Jose, as an intermediate weightlifter want an app that organizes workout schedule in a way that allows me to track my improvements over time.<br><br>
-Completed by Jose Herrera.<BR>
+- Completed by Jose Herrera.<BR>
  Source code can be found under src/WOPackage.  A WorkoutLog class is created when training mode is selected.  Users enter workouts and then the WorkoutLog class calculates an experience number.  Victor's Gui sends the number to Devon's Player object, which then potentially levels up.  This code is currently used during training mode.
   
 <b>Graphical User Interface:</b> <br>
   View a user interface that displays your progression in the game that will reflect your real life progression. <br>
 I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.<br><br>
-Completed by Victor Hernandez<br>
+- Completed by Victor Hernandez<br>
 Source code can be found under "Victor's Updated src" and can be accessed by Android Studio.
 This code is the graphical user interface for the application. This code is used throughout the application as it is the face of the app. The GUI uses buttons to navigate between different activities within the app, such as displaying the Training Page or adding reps to a workout. Screenshots of my GUI can be found in the "GUI Screenshots" folder.
 
@@ -61,7 +60,7 @@ This code is the graphical user interface for the application. This code is used
 Built in pedometer used to track steps right from your phone. <br>
 I, Kenny, as a person who walks to campus from really far away, would like to keep track of how many
 steps it takes to get to my class.<br><br>
-Completed By Kenneth Omo<br>
+- Completed By Kenneth Omo<br>
 Source code is under Pedometer folder on GitHub and can be accessed by Andriod Studio.
 This code is used for tracking the number of steps a person can take while the application is open. It is used in training mode.
 
