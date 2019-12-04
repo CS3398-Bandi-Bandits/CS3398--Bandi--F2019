@@ -62,6 +62,11 @@ I, Jose, as a user with little computer know-how I want an intuitive GUI so that
 Source code can be found under "Victor's Updated src" and can be accessed by Android Studio.
 This code is the graphical user interface for the application. This code is used throughout the application as it is the face of the app. The GUI uses buttons to navigate between different activities within the app, such as displaying the Training Page or adding reps to a workout. Screenshots of my GUI can be found in the "GUI Screenshots" folder.
 
+Created and icon for app that can be seen when searching for apps on andriod. <br>
+I, Jose, as a user with little computer know-how I want an intuitive GUI so that I can seamlessly navigate the software.<br><br>
+- Completed by Kenneth<br>
+Source code can be found under GuiPrototype. Implemented an icon for the app that can be seen on an andriod phone. This icon is now the picture at the top of the README
+
 
 <b>Biometrics:</b> <br>
 Built in pedometer used to track steps right from your phone. <br>
