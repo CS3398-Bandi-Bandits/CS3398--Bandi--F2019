@@ -76,6 +76,14 @@ Integrated the back end driver into the Login, View Stats and Training Mode scre
 I, Devon, as person who likes uniformity, wants the player from my Fit Warriors application to be used inside the game.<BR>
 - Completed by Devon Tyson, Dakota Ruhl and Kenneth Omo during 3<BR>
 Allows users to open the game from the Fit Warriors application. The GUI calls a reference to the Battle Module when the Battle mode button is pressed and the game is shown on the user's phone. We attempted to get our player information into the game but ran into problems with converting code between Android Studio Java based and Unity C# based platforms. Our code can be found under the GUI prototype. The module called FitWarriorsBattleModule is a reference to the game in the Prototype. The code to call the game can be found in the BattleActivity in the GUI. Programming was done in paired fashion and therefore most commits are from Kenneth Omo's GitHub account.
+ 
+ 
+ <b>Settings Page: </b><BR>
+The Main page has a Settings page that allows the user to change their information or reset their account.<BR>
+I, Devon, as a person who values customization, want to be able to edit my account settings after I have created it.
+<BR>
+- Completed by Victor Hernandez during Sprint 3<BR>
+Implemented a Settings button within the Main page that, once clicked, allows the user to enter the Settings page. Within this page, the user is able to change their username in case they don't like their current username. In addition, the user is given the option to delete their account if they click on the Delete Account button, which is also implemented within the Settings page.
 
 
 ## Screenshots
@@ -96,8 +104,8 @@ Jose:
 - next step: improve the code, add more workouts, increase functionality
 
 Victor:
-- status: GUI prototype completed, currently working relevant code into GUI
-- next step: integrate code fully, fix bugs, connect battle mode
+- status: GUI prototype completed, finished working relevant code into GUI, Settings page complete
+- next step: Make GUI more user friendly, implement character customization
 
 Dakota:
 - status: Battle module prototype completed, created base game setup with players and skills/health
@@ -108,8 +116,8 @@ Kenny:
 - next step: integrate with Victor's GUI
 
 Devon:
-- status: Built main frame, built player with all applicable skills, integrated workout package and part of GUI
-- next step: learn how to send jar files as plug-ins to unity, add more skills
+- status: Built application driver, built player with all applicable skills, integrated workout package into driver, fully integrated GUI with driver, added Speed skill, refactored code, added Battle Module connectivity to GUI.
+- next step: Finsih getting player stats into the Unity game.
 
 ## Inspiration
 Credits here
