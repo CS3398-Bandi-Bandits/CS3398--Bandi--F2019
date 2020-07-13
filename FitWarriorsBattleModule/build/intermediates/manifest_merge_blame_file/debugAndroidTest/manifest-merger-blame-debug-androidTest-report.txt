@@ -3,45 +3,24 @@
 3    package="com.WOPackage.FitWarriors.test" >
 4
 5    <uses-sdk
-<<<<<<< Updated upstream
-5-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:5:5-74
+5-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:5:5-74
 6        android:minSdkVersion="16"
-6-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:5:15-41
+6-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:5:15-41
 7        android:targetSdkVersion="29" />
-7-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:5:42-71
+7-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:11:5-15:80
+9-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:11:5-15:80
 10        android:name="android.test.InstrumentationTestRunner"
-10-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:11:22-75
+10-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:11:22-75
 11        android:functionalTest="false"
-11-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:14:22-52
+11-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:13:22-53
+12-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:13:22-53
 13        android:label="Tests for com.WOPackage.FitWarriors.test"
-13-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:15:22-78
+13-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:15:22-78
 14        android:targetPackage="com.WOPackage.FitWarriors.test" />
-14-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:12:22-76
-=======
-5-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:5:5-74
-6        android:minSdkVersion="16"
-6-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:5:15-41
-7        android:targetSdkVersion="29" />
-7-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:5:42-71
-8
-9    <instrumentation
-9-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:11:5-15:80
-10        android:name="android.test.InstrumentationTestRunner"
-10-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:11:22-75
-11        android:functionalTest="false"
-11-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:14:22-52
-12        android:handleProfiling="false"
-12-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:13:22-53
-13        android:label="Tests for com.WOPackage.FitWarriors.test"
-13-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:15:22-78
-14        android:targetPackage="com.WOPackage.FitWarriors.test" />
-14-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:12:22-76
->>>>>>> Stashed changes
+14-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:12:22-76
 15
 16    <supports-screens
 16-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-18:40
@@ -87,19 +66,11 @@
 36-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-33
 37
 38    <application
-<<<<<<< Updated upstream
-38-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:7:5-9:19
-=======
-38-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:7:5-9:19
->>>>>>> Stashed changes
+38-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:7:5-9:19
 39        android:banner="@drawable/app_banner"
 39-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-46
 40        android:debuggable="true"
-<<<<<<< Updated upstream
-40-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:7:18-43
-=======
-40-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:7:18-43
->>>>>>> Stashed changes
+40-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:7:18-43
 41        android:icon="@mipmap/app_icon"
 41-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-40
 42        android:isGame="true"
@@ -109,13 +80,8 @@
 44        android:theme="@style/UnityThemeSelector" >
 44-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:9-50
 45        <uses-library android:name="android.test.runner" />
-<<<<<<< Updated upstream
-45-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:8:9-60
-45-->C:\Users\kenne\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8783749791170418910.xml:8:23-57
-=======
-45-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:8:9-60
-45-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger203162580686142407.xml:8:23-57
->>>>>>> Stashed changes
+45-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:8:9-60
+45-->C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1598394399042477651.xml:8:23-57
 46
 47        <activity
 47-->[__tested_artifact__::FitWarriorsBattleModule] C:\Users\herre\Documents\GitHub\CS3398--Bandi--F2019\FitWarriorsBattleModule\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:9-58:20
